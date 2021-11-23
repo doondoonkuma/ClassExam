@@ -42,19 +42,26 @@ public class Ex1123_2 {
 	
 		// 세 번째 객체 생성 및 테스트 (get, set 만든 이후)
 		Ex1123_1 cal3 = new Ex1123_1(10, 5);
-		// 10 + 5 = 15가 출력되도록 만들어 보자
+		// 10 + 5 = 15가 출력되도록 만들어 보자  / 정답은 딱 하나밖에 없다.
 		System.out.println(cal3.getNum1() + "+" + cal3.getNum2() + "=" + cal3.add());  //이렇게 출력 못하면 처음부터 다시 공부하고 이해할 것
 		
 		
 		// 네 번째 객체 생성 및 테스트
-		// 디폴트 생성자로 생성 후 매개변수(9, 10) 추가 하고 곱셈 출력 테스트 / Hint! get, set 활용
-		Ex1123_1 cal4 = new Ex1123_1(9, 10);
-		System.out.println(cal4.getNum1() + "*" + cal4.getNum2() + "=" + cal4.product()); //내가 한거
+		// 디폴트 생성자로 생성 후 매개변수(9, 10) 추가 하고 곱셈 출력 테스트 / Hint! get, set 활용 / 정답은 딱 하나밖에 없다.
+//		Ex1123_1 cal4 = new Ex1123_1(9, 10);
+//		System.out.println(cal4.getNum1() + "*" + cal4.getNum2() + "=" + cal4.product());  // 내가 한거. 값은 나오는데 오답.. 출력은 맞췄다.
 		
-		Ex1123_1 cal5 = new Ex1123_1();
-		cal5.setNum1(9);
-		cal5.setNum2(10);
-		System.out.println(cal5.product());  //유비가 한거
+//		Ex1123_1 cal4 = new Ex1123_1();
+//		cal4.setNum1(9);
+//		cal4.setNum2(10);                     //유비가 한거. 정답이네ㅜ
+//		System.out.println(cal4.product());
+		
+		//선생님 정답
+		Ex1123_1 cal4 = new Ex1123_1();
+		cal4.setNum1(9);
+		cal4.setNum2(10);
+		System.out.println(cal4.getNum1() + "*" + cal4.getNum2() + "=" + cal4.product());
+		
 		
 	}
 
