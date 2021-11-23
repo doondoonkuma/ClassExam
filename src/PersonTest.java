@@ -24,7 +24,7 @@ public class PersonTest {
 		System.out.println(hu6.get());    */
 		
 		//선생님의 정답
-		Person hu3 = new Person("박종수", 185, 74);  //세 개 넣고 한 번에 출력
+		Person hu3 = new Person();  //세 개 넣고 한 번에 출력
 		System.out.println("성명 : " + hu3.getName() + ", 키 : " + hu3.getHeight() + ", 몸무게 : " + hu3.getWeight());
 		
 		hu3.setPerson("박종수", 180, 80);              //인적사항 변형하여 출력할 줄 아는가? -를 알아보는 기출변형문제
