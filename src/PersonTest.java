@@ -6,7 +6,6 @@ public class PersonTest {
 		// 오버로딩된 생성자가 있을 경우 디폴트 생성자도 구현해야 한다.(내용 없어도 됨)
 		Person hu1 = new Person();   //디폴트 생성자
 		Person hu2 = new Person("둔둔이");     //매개변수1개 생성자
-		
 		System.out.println(hu2.getName());
 
 		
