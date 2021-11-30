@@ -4,8 +4,8 @@ public class StudentArray {
 	public static void main(String[] args) {
 		
 		//¼±»ý´ÔÀÌ ¸¸µç°Å
-		Student st1 = new Student("È«±æµ¿");
-		System.out.println(st1.getStudentName() + ":" + st1.getStudentId());
+//		Student st1 = new Student("È«±æµ¿");
+//		System.out.println(st1.getStudentName() + ":" + st1.getStudentId());
 		
 		
 		
