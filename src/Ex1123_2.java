@@ -1,62 +1,61 @@
-
 public class Ex1123_2 {
 
 	public static void main(String[] args) {
 		
-		// Ã¹ ¹øÂ° °´Ã¼ »ý¼º ¹× Å×½ºÆ®
-		// ÀÎ½ºÅÏ½º »ý¼ºÇØ¾ß Å¬·¡½º »ç¿ë °¡´É
-		// ¹®¹ý : Å¬·¡½º¸í º¯¼ö¸í = new »ý¼ºÀÚ
-		// µðÆúÆ® »ý¼ºÀÚ´Â Å¬·¡½º¸í°ú µ¿ÀÏÇÏ¸ç ¸Å°³º¯¼ö ¾øÀ½
-		//µ¡¼À ¹æ½Ä ¸¸µé¾îº¸ÀÚ! 
-		//1¹ø ¹æ½Ä
-		Ex1123_1 cal1 = new Ex1123_1();        /* µðÆúÆ® »ý¼ºÀÚ·Î¼­ ÀÎ½ºÅÏ½º »ý¼º(°´Ã¼ »ý¼º), °ýÈ£´Â ¸Å°³º¯¼ö°¡ ¾ø´Â »óÅÂ¸¦ ¸»ÇØÁØ´Ù. 
-		                                          Å¬·¡½º1¿¡¼­ ÀÎ¼ö ÀÖ´Â »ý¼ºÀÚ¸¦ ¸¸µé¾ú´Ù¸é Å¬·¡½º2ÀÇ µðÆúÆ® »ý¼ºÀÚ´Â ¿¡·¯°¡ ³ªÅ¸³­´Ù. ±×·¡¼­ Å¬·¡½º1¿¡¼­ µðÆúÆ® »ý¼ºÀÚ¸¦ ¸¸µç´Ù.*/
-		System.out.println(cal1.num1);         //ÀÔ·Â¿¡ »ç¿ëÇÑ Á¤º¸¸¦ ÀúÀåÇÏÁö ¸øÇØ¼­ °á°ú°ªÀº 0
-		System.out.println(cal1.num2);		   //ÀÔ·Â¿¡ »ç¿ëÇÑ Á¤º¸¸¦ ÀúÀåÇÏÁö ¸øÇØ¼­ °á°ú°ªÀº 0
-		System.out.println(cal1.result);       //ÀÔ·Â¿¡ »ç¿ëÇÑ Á¤º¸¸¦ ÀúÀåÇÏÁö ¸øÇØ¼­ °á°ú°ªÀº 0
-		System.out.println(cal1.add(10, 20));    // 10°ú 20À» ´õÇÏÀÚ, addÀÇ result°ªÀÌ°í, Ãâ·Â¹®¿¡¼­ °ýÈ£¸¸ ½áÁÖ¸é µÈ´Ù.
-		//2¹ø ¹æ½Ä
-		int test = cal1.add(1, 2);   //°á°ú°¡ test¿¡ ¹ÝÈ¯µÉ°ÍÀÓ
+		// ì²« ë²ˆì§¸ ê°ì²´ ìƒì„± ë° í…ŒìŠ¤íŠ¸
+		// ì¸ìŠ¤í„´ìŠ¤ ìƒì„±í•´ì•¼ í´ëž˜ìŠ¤ ì‚¬ìš© ê°€ëŠ¥
+		// ë¬¸ë²• : í´ëž˜ìŠ¤ëª… ë³€ìˆ˜ëª… = new ìƒì„±ìž
+		// ë””í´íŠ¸ ìƒì„±ìžëŠ” í´ëž˜ìŠ¤ëª…ê³¼ ë™ì¼í•˜ë©° ë§¤ê°œë³€ìˆ˜ ì—†ìŒ
+		//ë§ì…ˆ ë°©ì‹ ë§Œë“¤ì–´ë³´ìž! 
+		//1ë²ˆ ë°©ì‹
+		Ex1123_1 cal1 = new Ex1123_1();        /* ë””í´íŠ¸ ìƒì„±ìžë¡œì„œ ì¸ìŠ¤í„´ìŠ¤ ìƒì„±(ê°ì²´ ìƒì„±), ê´„í˜¸ëŠ” ë§¤ê°œë³€ìˆ˜ê°€ ì—†ëŠ” ìƒíƒœë¥¼ ë§í•´ì¤€ë‹¤. 
+		                                          í´ëž˜ìŠ¤1ì—ì„œ ì¸ìˆ˜ ìžˆëŠ” ìƒì„±ìžë¥¼ ë§Œë“¤ì—ˆë‹¤ë©´ í´ëž˜ìŠ¤2ì˜ ë””í´íŠ¸ ìƒì„±ìžëŠ” ì—ëŸ¬ê°€ ë‚˜íƒ€ë‚œë‹¤. ê·¸ëž˜ì„œ í´ëž˜ìŠ¤1ì—ì„œ ë””í´íŠ¸ ìƒì„±ìžë¥¼ ë§Œë“ ë‹¤.*/
+		System.out.println(cal1.num1);         //ìž…ë ¥ì— ì‚¬ìš©í•œ ì •ë³´ë¥¼ ì €ìž¥í•˜ì§€ ëª»í•´ì„œ ê²°ê³¼ê°’ì€ 0
+		System.out.println(cal1.num2);		   //ìž…ë ¥ì— ì‚¬ìš©í•œ ì •ë³´ë¥¼ ì €ìž¥í•˜ì§€ ëª»í•´ì„œ ê²°ê³¼ê°’ì€ 0
+		System.out.println(cal1.result);       //ìž…ë ¥ì— ì‚¬ìš©í•œ ì •ë³´ë¥¼ ì €ìž¥í•˜ì§€ ëª»í•´ì„œ ê²°ê³¼ê°’ì€ 0
+		System.out.println(cal1.add(10, 20));    // 10ê³¼ 20ì„ ë”í•˜ìž, addì˜ resultê°’ì´ê³ , ì¶œë ¥ë¬¸ì—ì„œ ê´„í˜¸ë§Œ ì¨ì£¼ë©´ ëœë‹¤.
+		//2ë²ˆ ë°©ì‹
+		int test = cal1.add(1, 2);   //ê²°ê³¼ê°€ testì— ë°˜í™˜ë ê²ƒìž„
 		System.out.println(test);
 		
-		//°ö¼À ¹æ½Ä ¸¸µé¾îº¸ÀÚ!
-		//1¹ø ¹æ½Ä
+		//ê³±ì…ˆ ë°©ì‹ ë§Œë“¤ì–´ë³´ìž!
+		//1ë²ˆ ë°©ì‹
 		Ex1123_1 TT = new Ex1123_1();
 		System.out.println(TT.product(4, 4));
-		//2¹ø ¹æ½Ä
+		//2ë²ˆ ë°©ì‹
 		int DD = TT.product(5, 5);
 		System.out.println(DD);
 		
-		System.out.println(cal1.num1);         //ÀÔ·Â¿¡ »ç¿ëÇÑ Á¤º¸¸¦ ÀúÀåÇÏÁö ¸øÇØ¼­ °á°ú°ªÀº 0
-		System.out.println(cal1.num2);		   //ÀÔ·Â¿¡ »ç¿ëÇÑ Á¤º¸¸¦ ÀúÀåÇÏÁö ¸øÇØ¼­ °á°ú°ªÀº 0 ... ÀÌ¾ú´Âµ¥, ¤·¤· ¾Õ¿¡¼­ ¸Å°³º¯¼ö¸¦ Áö¿ªº¯¼ö·Î ¼³Á¤ÇØÁÖ´Ï±î °á°ú °ªÀÌ ³ª¿À°Ô µÇ¾ú´Ù.
-		System.out.println(cal1.result);	   //result´Â ÃÖÁ¾ °á°ú °ªÀÌ¹Ç·Î °è»ê µÈ °ªÀÌ ³ª¿À°Ô µÊ
+		System.out.println(cal1.num1);         //ìž…ë ¥ì— ì‚¬ìš©í•œ ì •ë³´ë¥¼ ì €ìž¥í•˜ì§€ ëª»í•´ì„œ ê²°ê³¼ê°’ì€ 0
+		System.out.println(cal1.num2);		   //ìž…ë ¥ì— ì‚¬ìš©í•œ ì •ë³´ë¥¼ ì €ìž¥í•˜ì§€ ëª»í•´ì„œ ê²°ê³¼ê°’ì€ 0 ... ì´ì—ˆëŠ”ë°, ã…‡ã…‡ ì•žì—ì„œ ë§¤ê°œë³€ìˆ˜ë¥¼ ì§€ì—­ë³€ìˆ˜ë¡œ ì„¤ì •í•´ì£¼ë‹ˆê¹Œ ê²°ê³¼ ê°’ì´ ë‚˜ì˜¤ê²Œ ë˜ì—ˆë‹¤.
+		System.out.println(cal1.result);	   //resultëŠ” ìµœì¢… ê²°ê³¼ ê°’ì´ë¯€ë¡œ ê³„ì‚° ëœ ê°’ì´ ë‚˜ì˜¤ê²Œ ë¨
 		
-		// µÎ ¹øÂ° °´Ã¼ »ý¼º ¹× Å×½ºÆ®
-		Ex1123_1 cal2 = new Ex1123_1(3, 5);    //°´Ã¼ »ý¼º(ÀÎ½ºÅÏ½º »ý¼ºÀÌ¶ó°íµµ ÇÑ´Ù.) cal2º¯¼ö ÇÏ³ª¸¸ ¸¸µé¾î ³õÀ¸¸é ¾Æ·¡ºÎÅÍ´Â »çÄ¢¿¬»ê Ãâ·ÂÀÌ °£ÆíÇØÁø´Ù. ¸®ÅÏµÇ´Ï±î
+		// ë‘ ë²ˆì§¸ ê°ì²´ ìƒì„± ë° í…ŒìŠ¤íŠ¸
+		Ex1123_1 cal2 = new Ex1123_1(3, 5);    //ê°ì²´ ìƒì„±(ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ì´ë¼ê³ ë„ í•œë‹¤.) cal2ë³€ìˆ˜ í•˜ë‚˜ë§Œ ë§Œë“¤ì–´ ë†“ìœ¼ë©´ ì•„ëž˜ë¶€í„°ëŠ” ì‚¬ì¹™ì—°ì‚° ì¶œë ¥ì´ ê°„íŽ¸í•´ì§„ë‹¤. ë¦¬í„´ë˜ë‹ˆê¹Œ
 		System.out.println(cal2.add());        
 		System.out.println(cal2.subtract());
 		System.out.println(cal2.product());
 		System.out.println(cal2.devide());
 	
-		System.out.println(cal2.add(6, 7));    //¿©±â¼­ º¯¼ö °ªÀ» º¯°æÇØµµ ¹®Á¦ ¾ø´Ù.
+		System.out.println(cal2.add(6, 7));    //ì—¬ê¸°ì„œ ë³€ìˆ˜ ê°’ì„ ë³€ê²½í•´ë„ ë¬¸ì œ ì—†ë‹¤.
 	
-		// ¼¼ ¹øÂ° °´Ã¼ »ý¼º ¹× Å×½ºÆ® (get, set ¸¸µç ÀÌÈÄ)
+		// ì„¸ ë²ˆì§¸ ê°ì²´ ìƒì„± ë° í…ŒìŠ¤íŠ¸ (get, set ë§Œë“  ì´í›„)
 		Ex1123_1 cal3 = new Ex1123_1(10, 5);
-		// 10 + 5 = 15°¡ Ãâ·ÂµÇµµ·Ï ¸¸µé¾î º¸ÀÚ  / Á¤´äÀº µü ÇÏ³ª¹Û¿¡ ¾ø´Ù.
-		System.out.println(cal3.getNum1() + "+" + cal3.getNum2() + "=" + cal3.add());  //ÀÌ·¸°Ô Ãâ·Â ¸øÇÏ¸é Ã³À½ºÎÅÍ ´Ù½Ã °øºÎÇÏ°í ÀÌÇØÇÒ °Í
+		// 10 + 5 = 15ê°€ ì¶œë ¥ë˜ë„ë¡ ë§Œë“¤ì–´ ë³´ìž  / ì •ë‹µì€ ë”± í•˜ë‚˜ë°–ì— ì—†ë‹¤.
+		System.out.println(cal3.getNum1() + "+" + cal3.getNum2() + "=" + cal3.add());  //ì´ë ‡ê²Œ ì¶œë ¥ ëª»í•˜ë©´ ì²˜ìŒë¶€í„° ë‹¤ì‹œ ê³µë¶€í•˜ê³  ì´í•´í•  ê²ƒ
 		
 		
-		// ³× ¹øÂ° °´Ã¼ »ý¼º ¹× Å×½ºÆ®
-		// µðÆúÆ® »ý¼ºÀÚ·Î »ý¼º ÈÄ ¸Å°³º¯¼ö(9, 10) Ãß°¡ ÇÏ°í °ö¼À Ãâ·Â Å×½ºÆ® / Hint! get, set È°¿ë / Á¤´äÀº µü ÇÏ³ª¹Û¿¡ ¾ø´Ù.
+		// ë„¤ ë²ˆì§¸ ê°ì²´ ìƒì„± ë° í…ŒìŠ¤íŠ¸
+		// ë””í´íŠ¸ ìƒì„±ìžë¡œ ìƒì„± í›„ ë§¤ê°œë³€ìˆ˜(9, 10) ì¶”ê°€ í•˜ê³  ê³±ì…ˆ ì¶œë ¥ í…ŒìŠ¤íŠ¸ / Hint! get, set í™œìš© / ì •ë‹µì€ ë”± í•˜ë‚˜ë°–ì— ì—†ë‹¤.
 //		Ex1123_1 cal4 = new Ex1123_1(9, 10);
-//		System.out.println(cal4.getNum1() + "*" + cal4.getNum2() + "=" + cal4.product());  // ³»°¡ ÇÑ°Å. °ªÀº ³ª¿À´Âµ¥ ¿À´ä.. Ãâ·ÂÀº ¸ÂÃè´Ù.
+//		System.out.println(cal4.getNum1() + "*" + cal4.getNum2() + "=" + cal4.product());  // ë‚´ê°€ í•œê±°. ê°’ì€ ë‚˜ì˜¤ëŠ”ë° ì˜¤ë‹µ.. ì¶œë ¥ì€ ë§žì·„ë‹¤.
 		
 //		Ex1123_1 cal4 = new Ex1123_1();
 //		cal4.setNum1(9);
-//		cal4.setNum2(10);                     //À¯ºñ°¡ ÇÑ°Å. Á¤´äÀÌ³×¤Ì
+//		cal4.setNum2(10);                     //ìœ ë¹„ê°€ í•œê±°. ì •ë‹µì´ë„¤ã…œ
 //		System.out.println(cal4.product());
 		
-		//¼±»ý´Ô Á¤´ä
+		//ì„ ìƒë‹˜ ì •ë‹µ
 		Ex1123_1 cal4 = new Ex1123_1();
 		cal4.setNum1(9);
 		cal4.setNum2(10);

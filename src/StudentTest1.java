@@ -1,59 +1,58 @@
-
 public class StudentTest1 {
 
 	public static void main(String[] args) {
-		// Student Å¬·¡½º Å×½ºÆ® (±³Àç182p)
+		// Student í´ë˜ìŠ¤ í…ŒìŠ¤íŠ¸ (êµì¬182p)
 		
-		System.out.println(Student.getSerialNum());  //°´Ã¼»ı¼º°ú ¹«°üÇÏ´Ù.
+		System.out.println(Student.getSerialNum());  //ê°ì²´ìƒì„±ê³¼ ë¬´ê´€í•˜ë‹¤.
 		
 		
-		Student st1 = new Student();    //µğÆúÆ® »ı¼ºÀÚÀÌ´Ù. *Å¬·¡½º ÀÚ·áÇü _ º¯¼öÀÌ¸§ = new _ »ı¼ºÀÚ;  -> new ¿¹¾à¾î·Î ¸¸µç Å¬·¡½ºÀÌ´Ù.
-		st1.setStudentName("µĞµĞÀÌ");
-		//System.out.println(st1.studentName);          // public ¸â¹öº¯¼öÀÌ¹Ç·Î °¡´É
-		//System.out.println(st1.getStudentName());     // public ¸Ş¼­µåÀÌ¹Ç·Î °¡´É
+		Student st1 = new Student();    //ë””í´íŠ¸ ìƒì„±ìì´ë‹¤. *í´ë˜ìŠ¤ ìë£Œí˜• _ ë³€ìˆ˜ì´ë¦„ = new _ ìƒì„±ì;  -> new ì˜ˆì•½ì–´ë¡œ ë§Œë“  í´ë˜ìŠ¤ì´ë‹¤.
+		st1.setStudentName("ë‘”ë‘”ì´");
+		//System.out.println(st1.studentName);          // public ë©¤ë²„ë³€ìˆ˜ì´ë¯€ë¡œ ê°€ëŠ¥
+		//System.out.println(st1.getStudentName());     // public ë©”ì„œë“œì´ë¯€ë¡œ ê°€ëŠ¥
 
 		
-		//st1.serialNum++;    //->st2¸¦ »ı¼ºÇÑ ÈÄ 11¶óÀÎ¿¡¼­ st1¿¡ ´ëÇÑ ÈÄÀ§¿¬»êÀ» ´ëÀÔÇØº¸¾Æµµ st2¿¡µµ µ¿ÀÏÇÏ°Ô Àû¿ëµÈ´Ù. ½ºÅÂÆ½ÀÌ ÀÖÀ¸´Ï±î!
+		//st1.serialNum++;    //->st2ë¥¼ ìƒì„±í•œ í›„ 11ë¼ì¸ì—ì„œ st1ì— ëŒ€í•œ í›„ìœ„ì—°ì‚°ì„ ëŒ€ì…í•´ë³´ì•„ë„ st2ì—ë„ ë™ì¼í•˜ê²Œ ì ìš©ëœë‹¤. ìŠ¤íƒœí‹±ì´ ìˆìœ¼ë‹ˆê¹Œ!
 		                      
 
-//		System.out.println(st1.serialNum);   //static º¯¼ö ÀĞ±â
-		System.out.println(st1.getStudentName() + ":" + st1.studentId);  //*¨Í
+//		System.out.println(st1.serialNum);   //static ë³€ìˆ˜ ì½ê¸°
+		System.out.println(st1.getStudentName() + ":" + st1.studentId);  //*â“
 		Student st2 = new Student();
-		st2.setStudentName("·ç·ç");
-		System.out.println(st2.getStudentName() + ":" + st2.studentId);  //*¨Í ÇÏÁö¸¸ ¾Õ¿¡¼­ Id¸¦ ¸¸µé¾î¼­ Àû¿ëÇÑ ÈÄ·Î´Â °¢ °´Ã¼¸¶´Ù µ¿ÀÏÇÏ°Ô Àû¿ëÇÑ´Ù.
+		st2.setStudentName("ë£¨ë£¨");
+		System.out.println(st2.getStudentName() + ":" + st2.studentId);  //*â“ í•˜ì§€ë§Œ ì•ì—ì„œ Idë¥¼ ë§Œë“¤ì–´ì„œ ì ìš©í•œ í›„ë¡œëŠ” ê° ê°ì²´ë§ˆë‹¤ ë™ì¼í•˜ê²Œ ì ìš©í•œë‹¤.
 		
 		Student st3 = new Student();
-		st3.setStudentName("Æ¼Æ¼");
+		st3.setStudentName("í‹°í‹°");
 		
 		Student st4 = new Student();
 		
-		st3.setStudentName("¶ó¶ó");
+		st3.setStudentName("ë¼ë¼");
 		
 //		System.out.println(st1.getSerialNum);
 //		System.out.println(st2.getSerialNum);
 //		System.out.println(st3.getSerialNum);
-//		System.out.println(st4.getSerialNum);       //ÇÁ¶óÀÌºøÀ» Àû¿ëÇÑ »óÅÂÀÌ°í, ¸Ş¼­µå ³»¿¡¼­ ½Ã¸®¾ó³Ñ¹ö¸¦ ºÒ·¯¿À´Â °ÍÀÌ´Ù.
-													//ÀÌ Ãâ·Â¹®À» ºÒ·¯¿À·Á¸é ¾Õ¿¡ ¸Ş¼­µå¿¡¼­ ½ºÅÂÆ½À» »©¸é Ãâ·ÂÀÌ °¡´ÉÇÏ´Ù.
+//		System.out.println(st4.getSerialNum);       //í”„ë¼ì´ë¹—ì„ ì ìš©í•œ ìƒíƒœì´ê³ , ë©”ì„œë“œ ë‚´ì—ì„œ ì‹œë¦¬ì–¼ë„˜ë²„ë¥¼ ë¶ˆëŸ¬ì˜¤ëŠ” ê²ƒì´ë‹¤.
+													//ì´ ì¶œë ¥ë¬¸ì„ ë¶ˆëŸ¬ì˜¤ë ¤ë©´ ì•ì— ë©”ì„œë“œì—ì„œ ìŠ¤íƒœí‹±ì„ ë¹¼ë©´ ì¶œë ¥ì´ ê°€ëŠ¥í•˜ë‹¤.
 		
 		System.out.println(Student.getSerialNum());
 		System.out.println(Student.getSerialNum());
 		System.out.println(Student.getSerialNum());
-		System.out.println(Student.getSerialNum()); //*****System.out.println(Student.getSerialNum()); Å¬·¡½º ¸íÀ» ºÙ¿©¼­ ¾²¸é ¾ÈµÈ´Ù.
-													//ÇÁ¶óÀÌºøÀ» Àû¿ëÇÑ »óÅÂÀÌ°í, ¸Ş¼­µå ³»¿¡¼­ ½ºÅÂÆ½À» Àû¿ëÇÑ ½Ã¸®¾ó³Ñ¹ö¸¦ ºÒ·¯ ¿Ã¶§´Â Å¬·¡½º ¸íÀ» ºÙ¿©¼­ Ãâ·ÂÇÒ ¼ö ÀÖ´Ù.
-													//ÀÌ Ãâ·Â¹®À» ºÒ·¯¿À·Á¸é ¾Õ¿¡ ¸Ş¼­µå¿¡¼­ ½ºÅÂÆ½À» ºÎ¿©ÇØ¾ß Ãâ·ÂÀÌ °¡´ÉÇÏ´Ù.
+		System.out.println(Student.getSerialNum()); //*****System.out.println(Student.getSerialNum()); í´ë˜ìŠ¤ ëª…ì„ ë¶™ì—¬ì„œ ì“°ë©´ ì•ˆëœë‹¤.
+													//í”„ë¼ì´ë¹—ì„ ì ìš©í•œ ìƒíƒœì´ê³ , ë©”ì„œë“œ ë‚´ì—ì„œ ìŠ¤íƒœí‹±ì„ ì ìš©í•œ ì‹œë¦¬ì–¼ë„˜ë²„ë¥¼ ë¶ˆëŸ¬ ì˜¬ë•ŒëŠ” í´ë˜ìŠ¤ ëª…ì„ ë¶™ì—¬ì„œ ì¶œë ¥í•  ìˆ˜ ìˆë‹¤.
+													//ì´ ì¶œë ¥ë¬¸ì„ ë¶ˆëŸ¬ì˜¤ë ¤ë©´ ì•ì— ë©”ì„œë“œì—ì„œ ìŠ¤íƒœí‹±ì„ ë¶€ì—¬í•´ì•¼ ì¶œë ¥ì´ ê°€ëŠ¥í•˜ë‹¤.
 		
 //		System.out.println(st1.serialNum);
-//		System.out.println(st2.serialNum);          //*****System.out.println(Student.serialNum);Å¬·¡½º ÀÌ¸§À» ³Ö¾î¼­ ÇØµµ µÈ´Ù.
+//		System.out.println(st2.serialNum);          //*****System.out.println(Student.serialNum);í´ë˜ìŠ¤ ì´ë¦„ì„ ë„£ì–´ì„œ í•´ë„ ëœë‹¤.
 //		System.out.println(st3.serialNum);
-//		System.out.println(st4.serialNum);          //¨ç½Ã¸®¾ó³Ñ¹ö´Â ½ºÅÂÆ½À» Àû¿ë Çß±â ¶§¹®¿¡ µ¿ÀÏÇÑ °ªÀ» °¢ °´Ã¼¿¡°Ô ºÎ¿©ÇÏ°í
+//		System.out.println(st4.serialNum);          //â‘ ì‹œë¦¬ì–¼ë„˜ë²„ëŠ” ìŠ¤íƒœí‹±ì„ ì ìš© í–ˆê¸° ë•Œë¬¸ì— ë™ì¼í•œ ê°’ì„ ê° ê°ì²´ì—ê²Œ ë¶€ì—¬í•˜ê³ 
 		
 		
 		System.out.println(st1.studentId);
 		System.out.println(st2.studentId);
 		System.out.println(st3.studentId);
-		System.out.println(st4.studentId);          //¨è¾ÆÀÌµğ´Â ½ºÅÂÆ½ Àû¿ëÀÌ ¾ø±â ¶§¹®¿¡ ½Ã¸®¾ó³Ñ¹ö´Â ++;¿¬»êÀ» Àû¿ëÇØ¼­ °¢ °´Ã¼°¡ Ãß°¡µÉ¶§¸¶´Ù ´©ÀûÀÌ µÈ´Ù.
+		System.out.println(st4.studentId);          //â‘¡ì•„ì´ë””ëŠ” ìŠ¤íƒœí‹± ì ìš©ì´ ì—†ê¸° ë•Œë¬¸ì— ì‹œë¦¬ì–¼ë„˜ë²„ëŠ” ++;ì—°ì‚°ì„ ì ìš©í•´ì„œ ê° ê°ì²´ê°€ ì¶”ê°€ë ë•Œë§ˆë‹¤ ëˆ„ì ì´ ëœë‹¤.
 		
-		//¿Í ÁøÂ¥ ·¹¾Ë Çò°¥¸°´Ù. ÀÌÇØ°¡ µÆ´Âµ¥ ÀĞ´Â ¼Óµµ°¡ ´À¸®´Ù. ÀÍ¼÷ÇØÁú¶§±îÁö ¿¬½ÀÇØº¸ÀÚ-
+		//ì™€ ì§„ì§œ ë ˆì•Œ í—·ê°ˆë¦°ë‹¤. ì´í•´ê°€ ëëŠ”ë° ì½ëŠ” ì†ë„ê°€ ëŠë¦¬ë‹¤. ìµìˆ™í•´ì§ˆë•Œê¹Œì§€ ì—°ìŠµí•´ë³´ì-
 		
 		
 	}

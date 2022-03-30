@@ -1,25 +1,22 @@
-
 public class GoldCustomer extends Customer {
 
 	double saleRatio;
 	
 	public GoldCustomer(int customerID, String customerName) {
-		super(customerID, customerName);  //ºÎ¸ğÅ¬·¡½ºÀÇ »ı¼ºÀÚ È£Ãâ(µğÆúÆ® »ı¼ºÀÚ´Â ÀÚµ¿ È£Ãâ µÇÁö¸¸ ±×·¸Áö ¾ÊÀº °æ¿ì ¸¸µé¾î Áà¾ß ÇÑ´Ù.)
-		                                  //¸í½ÃÀûÀ¸·Î »ı¼ºÀÚ µÎ °³ È£Ãâ ÇÏ¸é µğÆúÆ® »ı¼ºÀÚ´Â ÀÚµ¿ È£Ãâ ºÒ°¡´É..(ÀÌ°Ç Çò°¥¸°´Ù.)
+		super(customerID, customerName);  //ë¶€ëª¨í´ë˜ìŠ¤ì˜ ìƒì„±ì í˜¸ì¶œ(ë””í´íŠ¸ ìƒì„±ìëŠ” ìë™ í˜¸ì¶œ ë˜ì§€ë§Œ ê·¸ë ‡ì§€ ì•Šì€ ê²½ìš° ë§Œë“¤ì–´ ì¤˜ì•¼ í•œë‹¤.)
+		                                  //ëª…ì‹œì ìœ¼ë¡œ ìƒì„±ì ë‘ ê°œ í˜¸ì¶œ í•˜ë©´ ë””í´íŠ¸ ìƒì„±ìëŠ” ìë™ í˜¸ì¶œ ë¶ˆê°€ëŠ¥..(ì´ê±´ í—·ê°ˆë¦°ë‹¤.)
 		customerGrade = "GOLD";
-		bonusRatio = 0.02;    //º¸³Ê½º
-		saleRatio = 0.1;      //ÇÒÀÎÀ²
+		bonusRatio = 0.02;    //ë³´ë„ˆìŠ¤
+		saleRatio = 0.1;      //í• ì¸ìœ¨
 	}
 	
-	//ÀçÁ¤ÀÇÇÑ ¸Ş¼­µå
+	//ì¬ì •ì˜í•œ ë©”ì„œë“œ
 	public int calcPrice(int price) {
-		bonusPoint += price * bonusRatio; //º¸³Ê½º Æ÷ÀÎÆ® ¾÷µ¥ÀÌÆ®, °¡°İ ¹İÈ¯
+		bonusPoint += price * bonusRatio; //ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ ì—…ë°ì´íŠ¸, ê°€ê²© ë°˜í™˜
 		return price - (int)(price * saleRatio);
 	}
-	//showCustomerInfo() ¸Ş¼­µå´Â »óÀ§Å¬·¡½º ±×´ë·Î »ç¿ë
+	//showCustomerInfo() ë©”ì„œë“œëŠ” ìƒìœ„í´ë˜ìŠ¤ ê·¸ëŒ€ë¡œ ì‚¬ìš©
 	
 	
 	
 }
-
-

@@ -1,29 +1,29 @@
-import java.util.ArrayList;  //¾î·¹ÀÌ ¸®½ºÆ®¶ó´Â Å¬·¡½º¸¦ »ç¿ëÇÏ°Ú´Ù!-ÀÇ ÀÇ¹Ì / ~~util.*;´Â util ¾Æ·¡ÀÇ ¸®½ºÆ® ¸ğµÎ¿¡°Ô Àû¿ë? ÇÏ´Â °æ·Î
+import java.util.ArrayList;  //ì–´ë ˆì´ ë¦¬ìŠ¤íŠ¸ë¼ëŠ” í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í•˜ê² ë‹¤!-ì˜ ì˜ë¯¸ / ~~util.*;ëŠ” util ì•„ë˜ì˜ ë¦¬ìŠ¤íŠ¸ ëª¨ë‘ì—ê²Œ ì ìš©? í•˜ëŠ” ê²½ë¡œ
 public class Ex1130_5 {
 
 	public static void main(String[] args) {
-		// ArrayList Å¬·¡½º È°¿ë(±³Àç 222p)
-		ArrayList<Book> library = new ArrayList<Book>(); //Á¦³×¸¯ Å¸ÀÔÀ¸·Î »ı¼º
+		// ArrayList í´ë˜ìŠ¤ í™œìš©(êµì¬ 222p)
+		ArrayList<Book> library = new ArrayList<Book>(); //ì œë„¤ë¦­ íƒ€ì…ìœ¼ë¡œ ìƒì„±
 		
 		System.out.println("==============================");
 		for (int i = 0; i < library.size(); i++) {
-			//ÀÓ½Ãº¯¼ö¸¦ ¸¸µç ÈÄ¿¡ ÀÌ°ÍÀ¸·Î ¹İÈ¯
-			Book book = library.get(i);   //°´Ã¼¸¦ ¹İÈ¯ÇÑ´Ù.
+			//ì„ì‹œë³€ìˆ˜ë¥¼ ë§Œë“  í›„ì— ì´ê²ƒìœ¼ë¡œ ë°˜í™˜
+			Book book = library.get(i);   //ê°ì²´ë¥¼ ë°˜í™˜í•œë‹¤.
 			book.showBookInfo();
 		}
-//		Book abc = new Book("ÅÂ¹é»ê¸Æ", "Á¶Á¤·¡");
-		library.add(new Book("Å©Áı»ç»¡°£¸À","Å©Áı»ç"));  //inline °´Ã¼ »ı¼º, °£°áÇÏÁö¸¸ º¯¼ö°¡ ´Ù¸¥ °÷¿¡¼­´Â ÀçÈ°¿ë µÇÁö ¾Ê´Â´Ù.
-		library.add(new Book("µå¸²ÄÚµù","¿¤¸®"));
-		library.add(new Book("±âÅ¸¿¬ÁÖ","Fami"));
+//		Book abc = new Book("íƒœë°±ì‚°ë§¥", "ì¡°ì •ë˜");
+		library.add(new Book("í¬ì§‘ì‚¬ë¹¨ê°„ë§›","í¬ì§‘ì‚¬"));  //inline ê°ì²´ ìƒì„±, ê°„ê²°í•˜ì§€ë§Œ ë³€ìˆ˜ê°€ ë‹¤ë¥¸ ê³³ì—ì„œëŠ” ì¬í™œìš© ë˜ì§€ ì•ŠëŠ”ë‹¤.
+		library.add(new Book("ë“œë¦¼ì½”ë”©","ì—˜ë¦¬"));
+		library.add(new Book("ê¸°íƒ€ì—°ì£¼","Fami"));
 		
 		System.out.println("==============================");
 		for (int i = 0; i < library.size(); i++) {
-			//ÀÓ½Ãº¯¼ö¸¦ ¸¸µç ÈÄ¿¡ ÀÌ°ÍÀ¸·Î ¹İÈ¯
-			Book book = library.get(i);   //°´Ã¼¸¦ ¹İÈ¯ÇÑ´Ù.
+			//ì„ì‹œë³€ìˆ˜ë¥¼ ë§Œë“  í›„ì— ì´ê²ƒìœ¼ë¡œ ë°˜í™˜
+			Book book = library.get(i);   //ê°ì²´ë¥¼ ë°˜í™˜í•œë‹¤.
 			book.showBookInfo();
 		}
 		
-		//Çâ»óµÈ for¹®À» È°¿ëÇØº¸ÀÚ!
+		//í–¥ìƒëœ forë¬¸ì„ í™œìš©í•´ë³´ì!
 		System.out.println("==============================");
 		for (Book abc : library) {
 			abc.showBookInfo();

@@ -1,71 +1,70 @@
-
 public class Ex1130_1 {
 
 	public static void main(String[] args) {
-		// ¹è¿­º¹»ç
+		// ë°°ì—´ë³µì‚¬
 		int[] array1 = {10, 20, 30, 40, 50};
 		int[] array2 = {1,2,3,4,5};
 		
 		
 		for (int i = 0; i < array2.length; i++) {
-			System.out.print(array2[i] + " ");    //""°ø¹é ¿ª½Ã °¡µ¶¼ºÀ» À§ÇØ ÀÔ·ÂÇÑ °ÍÀÏ »Ó
+			System.out.print(array2[i] + " ");    //""ê³µë°± ì—­ì‹œ ê°€ë…ì„±ì„ ìœ„í•´ ì…ë ¥í•œ ê²ƒì¼ ë¿
 		}
-		System.out.println();          //º¸±â ÆíÇÏ°Ô ÇÏ±â À§ÇØ ÁÙ ¹Ù²Ş¿ëÀ¸·Î Ãâ·Â
-		//±âº» Å¸ÀÔÀÇ º¹»ç´Â µ¶¸³Àû(int, double, float, char, ...)
+		System.out.println();          //ë³´ê¸° í¸í•˜ê²Œ í•˜ê¸° ìœ„í•´ ì¤„ ë°”ê¿ˆìš©ìœ¼ë¡œ ì¶œë ¥
+		//ê¸°ë³¸ íƒ€ì…ì˜ ë³µì‚¬ëŠ” ë…ë¦½ì (int, double, float, char, ...)
 		System.arraycopy(array1, 0, array2, 1, 4);
-		//¿øº»°ú ´ë»óÀº °¢°¢ À¯ÁöµÈ´Ù.
+		//ì›ë³¸ê³¼ ëŒ€ìƒì€ ê°ê° ìœ ì§€ëœë‹¤.
 		for (int i = 0; i < array2.length; i++) {
 			System.out.print(array2[i] + " ");
 		}
 		System.out.println();  
 		
-		array1[2] = 300;  //¹è¿­1 ¼öÁ¤
-		//¹è¿­1 È®ÀÎ(¼öÁ¤µÊ)
+		array1[2] = 300;  //ë°°ì—´1 ìˆ˜ì •
+		//ë°°ì—´1 í™•ì¸(ìˆ˜ì •ë¨)
 		for (int i = 0; i < array1.length; i++) {
 			System.out.print(array1[i] + " ");
 		}
 		System.out.println(); 
 		
-		//¹è¿­2 ¸®½ºÆ® ÇÏ¸é º¯È­ ¾øÀ½     ->À§¿¡¼­´Â 300ÀÌ ³ªÅ¸³µ°í, ¿©±â¼­´Â ÃÊ±âÈ­ Çß±â¶§¹®¿¡? ³ªÅ¸³ªÁö ¾Ê´Â°Å °°´Ù.
+		//ë°°ì—´2 ë¦¬ìŠ¤íŠ¸ í•˜ë©´ ë³€í™” ì—†ìŒ     ->ìœ„ì—ì„œëŠ” 300ì´ ë‚˜íƒ€ë‚¬ê³ , ì—¬ê¸°ì„œëŠ” ì´ˆê¸°í™” í–ˆê¸°ë•Œë¬¸ì—? ë‚˜íƒ€ë‚˜ì§€ ì•ŠëŠ”ê±° ê°™ë‹¤.
 		for (int i = 0; i < array2.length; i++) {
 			System.out.print(array2[i] + " ");
 		}
 		System.out.println();
 		//-----------------------------------------
-		//°´Ã¼¹è¿­ Ã³¸®
-		Book[] bookArr1 = new Book[3];   //Book °´Ã¼¸¦ ÀúÀåÇÒ ¹è¿­º¯¼ö bookArr1À» ¼±¾ğ, 1¹ø
-		Book[] bookArr2 = new Book[3];   //Book °´Ã¼¸¦ ÀúÀåÇÒ ¹è¿­º¯¼ö bookArr1À» ¼±¾ğ
+		//ê°ì²´ë°°ì—´ ì²˜ë¦¬
+		Book[] bookArr1 = new Book[3];   //Book ê°ì²´ë¥¼ ì €ì¥í•  ë°°ì—´ë³€ìˆ˜ bookArr1ì„ ì„ ì–¸, 1ë²ˆ
+		Book[] bookArr2 = new Book[3];   //Book ê°ì²´ë¥¼ ì €ì¥í•  ë°°ì—´ë³€ìˆ˜ bookArr1ì„ ì„ ì–¸
 		
-		//»ı¼º´Ü°è
-		Book aaa;   //ºÏ ¼±¾ğ     1¹ø =°°Àº °³³ä
-		aaa = new Book("aaa","bbb");  //ÀÌ°Ô ºÏ °´Ã¼ »ı¼º, 2¹ø
+		//ìƒì„±ë‹¨ê³„
+		Book aaa;   //ë¶ ì„ ì–¸     1ë²ˆ =ê°™ì€ ê°œë…
+		aaa = new Book("aaa","bbb");  //ì´ê²Œ ë¶ ê°ì²´ ìƒì„±, 2ë²ˆ
 		
-		bookArr1[0] = new Book("ÅÂ¹é»ê¸Æ","Á¶Á¤·¡");    //2¹ø =°°Àº °³³ä
-		bookArr1[1] = new Book("µ¥¹Ì¾È","Çì¸£¸¸Çì¼¼");
-		bookArr1[2] = new Book("¾î¶»°Ô»ì°ÍÀÎ°¡","À¯½Ã¹Î");
+		bookArr1[0] = new Book("íƒœë°±ì‚°ë§¥","ì¡°ì •ë˜");    //2ë²ˆ =ê°™ì€ ê°œë…
+		bookArr1[1] = new Book("ë°ë¯¸ì•ˆ","í—¤ë¥´ë§Œí—¤ì„¸");
+		bookArr1[2] = new Book("ì–´ë–»ê²Œì‚´ê²ƒì¸ê°€","ìœ ì‹œë¯¼");
 		
-		System.out.println("======¿øº»======");
-		for (int i = 0; i < bookArr1.length; i++) {  //¿øº»
-			bookArr1[i].showBookInfo();     //BookÅ¬·¡½º¿¡ Ãâ·Â¹®ÀÌ ÀÖ¾î¼­ µû·Î Ãâ·Â¹®À» ¾È ºÙ¿©µµ µÈ´Ù.
+		System.out.println("======ì›ë³¸======");
+		for (int i = 0; i < bookArr1.length; i++) {  //ì›ë³¸
+			bookArr1[i].showBookInfo();     //Bookí´ë˜ìŠ¤ì— ì¶œë ¥ë¬¸ì´ ìˆì–´ì„œ ë”°ë¡œ ì¶œë ¥ë¬¸ì„ ì•ˆ ë¶™ì—¬ë„ ëœë‹¤.
 		}
-		System.arraycopy(bookArr1, 0, bookArr2, 0, 3);  //¾èÀºº¹»ç
+		System.arraycopy(bookArr1, 0, bookArr2, 0, 3);  //ì–•ì€ë³µì‚¬
 		
-		System.out.println("======»çº»======");
-		for (int i = 0; i < bookArr2.length; i++) {  //»çº»
-			bookArr2[i].showBookInfo();     //BookÅ¬·¡½º¿¡ Ãâ·Â¹®ÀÌ ÀÖ¾î¼­ µû·Î Ãâ·Â¹®À» ¾È ºÙ¿©µµ µÈ´Ù.
-		}
-		
-		//¿øº» ¼öÁ¤
-		bookArr1[0].setBookName("³ª¸ñ");
-		bookArr1[0].setAuthor("¹Ú¿Ï¼­");
-		System.out.println("======¿øº»======");
-		for (int i = 0; i < bookArr1.length; i++) {  //¿øº»
-			bookArr1[i].showBookInfo();     //BookÅ¬·¡½º¿¡ Ãâ·Â¹®ÀÌ ÀÖ¾î¼­ µû·Î Ãâ·Â¹®À» ¾È ºÙ¿©µµ µÈ´Ù.
+		System.out.println("======ì‚¬ë³¸======");
+		for (int i = 0; i < bookArr2.length; i++) {  //ì‚¬ë³¸
+			bookArr2[i].showBookInfo();     //Bookí´ë˜ìŠ¤ì— ì¶œë ¥ë¬¸ì´ ìˆì–´ì„œ ë”°ë¡œ ì¶œë ¥ë¬¸ì„ ì•ˆ ë¶™ì—¬ë„ ëœë‹¤.
 		}
 		
-		System.out.println("======»çº»======");
-		for (int i = 0; i < bookArr2.length; i++) {  //»çº»
-			bookArr2[i].showBookInfo();     //BookÅ¬·¡½º¿¡ Ãâ·Â¹®ÀÌ ÀÖ¾î¼­ µû·Î Ãâ·Â¹®À» ¾È ºÙ¿©µµ µÈ´Ù.
+		//ì›ë³¸ ìˆ˜ì •
+		bookArr1[0].setBookName("ë‚˜ëª©");
+		bookArr1[0].setAuthor("ë°•ì™„ì„œ");
+		System.out.println("======ì›ë³¸======");
+		for (int i = 0; i < bookArr1.length; i++) {  //ì›ë³¸
+			bookArr1[i].showBookInfo();     //Bookí´ë˜ìŠ¤ì— ì¶œë ¥ë¬¸ì´ ìˆì–´ì„œ ë”°ë¡œ ì¶œë ¥ë¬¸ì„ ì•ˆ ë¶™ì—¬ë„ ëœë‹¤.
+		}
+		
+		System.out.println("======ì‚¬ë³¸======");
+		for (int i = 0; i < bookArr2.length; i++) {  //ì‚¬ë³¸
+			bookArr2[i].showBookInfo();     //Bookí´ë˜ìŠ¤ì— ì¶œë ¥ë¬¸ì´ ìˆì–´ì„œ ë”°ë¡œ ì¶œë ¥ë¬¸ì„ ì•ˆ ë¶™ì—¬ë„ ëœë‹¤.
 		}
 		
 		

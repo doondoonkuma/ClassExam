@@ -1,8 +1,8 @@
 
 public class Vehicle {
 	protected String carName;
-	public void move() {   // ¹«ºê ¸Ş¼­µå ÇÏ³ª¸¦ ¸¸µé¾ú´Ù!
-		System.out.println("ÀÚµ¿Â÷°¡ ¿òÁ÷ÀÎ´Ù.");
+	public void move() {   // ë¬´ë¸Œ ë©”ì„œë“œ í•˜ë‚˜ë¥¼ ë§Œë“¤ì—ˆë‹¤!
+		System.out.println("ìë™ì°¨ê°€ ì›€ì§ì¸ë‹¤.");
 	}
 	
 }

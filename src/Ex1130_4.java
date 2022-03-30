@@ -1,23 +1,22 @@
-
 public class Ex1130_4 {
 
 	public static void main(String[] args) {
-		// ´ÙÂ÷¿ø ¹è¿­(±³Àç 219p)
-		//int[][] arr = new int[2][3];           //2Çà 3¿­, »ý¼º¸¸ ÇÑ °Í
-		int[][] arr = {{1, 2, 3},{4, 5, 6}};     //2Çà 3¿­, ÃÊ±âÈ­¸¦ ÀÌ¿ëÇØ¼­ »ý¼ºÇÑ °Í
-		for (int i = 0; i < arr.length; i++) {         //Çà
-			for(int j = 0; j < arr[i].length; j++) {   //¿­
-				System.out.println(arr[i][j]);   //¿ø¼ÒÀÇ °ª Ãâ·Â
+		// ë‹¤ì°¨ì› ë°°ì—´(êµìž¬ 219p)
+		//int[][] arr = new int[2][3];           //2í–‰ 3ì—´, ìƒì„±ë§Œ í•œ ê²ƒ
+		int[][] arr = {{1, 2, 3},{4, 5, 6}};     //2í–‰ 3ì—´, ì´ˆê¸°í™”ë¥¼ ì´ìš©í•´ì„œ ìƒì„±í•œ ê²ƒ
+		for (int i = 0; i < arr.length; i++) {         //í–‰
+			for(int j = 0; j < arr[i].length; j++) {   //ì—´
+				System.out.println(arr[i][j]);   //ì›ì†Œì˜ ê°’ ì¶œë ¥
 			}
 			System.out.println();
 		}
 	
-		//¿·À¸·Î Ãâ·Â...?
-		int[][] arr1 = {{1, 2, 3},{4, 5, 6}};     //2Çà 3¿­, ÃÊ±âÈ­¸¦ ÀÌ¿ëÇØ¼­ »ý¼ºÇÑ °Í
-		for (int i = 0; i < arr1.length; i++) {         //Çà
-			for(int j = 0; j < arr1[i].length; j++) {   //¿­
+		//ì˜†ìœ¼ë¡œ ì¶œë ¥...?
+		int[][] arr1 = {{1, 2, 3},{4, 5, 6}};     //2í–‰ 3ì—´, ì´ˆê¸°í™”ë¥¼ ì´ìš©í•´ì„œ ìƒì„±í•œ ê²ƒ
+		for (int i = 0; i < arr1.length; i++) {         //í–‰
+			for(int j = 0; j < arr1[i].length; j++) {   //ì—´
 				System.out.print(arr1[i][j] + " ");
-				System.out.println(); //¿ø¼ÒÀÇ °ª Ãâ·Â
+				System.out.println(); //ì›ì†Œì˜ ê°’ ì¶œë ¥
 			}
 		
 		}

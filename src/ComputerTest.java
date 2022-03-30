@@ -1,8 +1,7 @@
-
 public class ComputerTest {
 
 	public static void main(String[] args) {
-//		Computer c1 = new Computer();  // Ãß»óÅ¬·¡½º´Â °´Ã¼»ı¼º ÇÏÁö ¾ÊÀ½
+//		Computer c1 = new Computer();  // ì¶”ìƒí´ë˜ìŠ¤ëŠ” ê°ì²´ìƒì„± í•˜ì§€ ì•ŠìŒ
 		Computer c2 = new DeskTop();
 		c2.turnOn();
 		c2.display();

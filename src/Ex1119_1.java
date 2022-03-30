@@ -1,15 +1,14 @@
-
 public class Ex1119_1 {
 
 	public static void main(String[] args) {
-		// Student Å¬·¡½º Å×½ºÆ®
-		Student st1 = new Student();  //°´Ã¼»ı¼º     /new Student´Â »ı¼ºÀÚ
-		st1.setStudentName("µĞµĞÀÌ");   //¸Ş¼­µå ½ÇÇà
+		// Student í´ë˜ìŠ¤ í…ŒìŠ¤íŠ¸
+		Student st1 = new Student();  //ê°ì²´ìƒì„±     /new StudentëŠ” ìƒì„±ì
+		st1.setStudentName("ë‘”ë‘”ì´");   //ë©”ì„œë“œ ì‹¤í–‰
 		
 		System.out.println(st1.getStudentName());
 		
 		Student st2 = new Student();
-		st2.setStudentName("·ç¶ûÀÌ");
+		st2.setStudentName("ë£¨ë‘ì´");
 		
 		System.out.println(st2.getStudentName());
 	}

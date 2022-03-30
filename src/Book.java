@@ -1,41 +1,41 @@
 
 public class Book {
-	//¸â¹öº¯¼ö(¼Ó¼º)
-	private String bookName;  //¨Í
+	//ë©¤ë²„ë³€ìˆ˜(ì†ì„±)
+	private String bookName;  //â“
 	private String author;
-	//µğÆúÆ® »ı¼ºÀÚ            ÀÛ¾÷Àº ÇÏÁö ¾ÊÁö¸¸, ¾øÀ¸¸é ¿¡·¯°¡ ³ªÅ¸³¯ ¼ö ÀÖ±â ¶§¹®¿¡ »ı¼ºÇÏ´Â °ÍÀÌ´Ù.
+	//ë””í´íŠ¸ ìƒì„±ì            ì‘ì—…ì€ í•˜ì§€ ì•Šì§€ë§Œ, ì—†ìœ¼ë©´ ì—ëŸ¬ê°€ ë‚˜íƒ€ë‚  ìˆ˜ ìˆê¸° ë•Œë¬¸ì— ìƒì„±í•˜ëŠ” ê²ƒì´ë‹¤.
 	public Book() {
 		
 	}
 	
-	//¿À¹ö·ÎµùµÈ »ı¼ºÀÚ
+	//ì˜¤ë²„ë¡œë”©ëœ ìƒì„±ì
 	public Book(String bookName, String author) {
-		this.bookName = bookName;     //this.bookNameÀº ¨Í¸¦ ¸»ÇÑ´Ù.
+		this.bookName = bookName;     //this.bookNameì€ â“ë¥¼ ë§í•œë‹¤.
 		this.author = author;
 	}
 	
-	//¸Ş¼­µå
-	//get, set ¹®ÀÚ¿­ ±ÔÄ¢ - get, set ´ÙÀ½¿¡ ¸â¹öº¯¼öÀÇ Ã¹±ÛÀÚ¸¦ ´ë¹®ÀÚ·Î ÀÛ¼ºÇØ¾ß ÇÔ, ´Ù¸¥ ¹®ÀÚ´Â µ¿ÀÏÇØ¾ß ÇÑ´Ù.
-	//setÀ¸·Î °ªÀ» Á¤ÇÏ°í(¾²±â), getÀ¸·Î °ªÀ» ÀĞ¾î³½´Ù.(ÀĞ±â)
+	//ë©”ì„œë“œ
+	//get, set ë¬¸ìì—´ ê·œì¹™ - get, set ë‹¤ìŒì— ë©¤ë²„ë³€ìˆ˜ì˜ ì²«ê¸€ìë¥¼ ëŒ€ë¬¸ìë¡œ ì‘ì„±í•´ì•¼ í•¨, ë‹¤ë¥¸ ë¬¸ìëŠ” ë™ì¼í•´ì•¼ í•œë‹¤.
+	//setìœ¼ë¡œ ê°’ì„ ì •í•˜ê³ (ì“°ê¸°), getìœ¼ë¡œ ê°’ì„ ì½ì–´ë‚¸ë‹¤.(ì½ê¸°)
 	public String getBookName() {
 		return bookName;
 	}
-	public String getAuthor() {   //getÀº ÀĞ´Â°Å! ¸®ÅÏÀÌ ÇÊ¿äÇØ!
+	public String getAuthor() {   //getì€ ì½ëŠ”ê±°! ë¦¬í„´ì´ í•„ìš”í•´!
 		return author;
 	}
 	
 	public void setBookName(String bookName) {
 		this.bookName = bookName;
 	}
-	public void setAuthor(String author) {     //setÀº ¾²´Â°Å! ¸®ÅÏ ÇÊ¿ä ¾ø¾î!
+	public void setAuthor(String author) {     //setì€ ì“°ëŠ”ê±°! ë¦¬í„´ í•„ìš” ì—†ì–´!
 		this.author = author;
 	}
 	
-	public void showBookInfo() {     //show ÀÌÈÄ ¾Æ¹«·¸°Ô³ª ÀÛ¼ºÇØµµ »ó°ü ¾ø´Ù. ¾Ë¾Æ º¼ ¼ö¸¸ ÀÖ°Ô ½á¶ó!
+	public void showBookInfo() {     //show ì´í›„ ì•„ë¬´ë ‡ê²Œë‚˜ ì‘ì„±í•´ë„ ìƒê´€ ì—†ë‹¤. ì•Œì•„ ë³¼ ìˆ˜ë§Œ ìˆê²Œ ì¨ë¼!
 		System.out.println(getBookName() + ":" + getAuthor());
 	}
 	
-	//¿À¹ö·ÎµùµÈ ¸Ş¼­µå
-	//ÁøÀÔÁ¡(=¸ŞÀÎ ¸Ş¼­µå, º¸ÅëÀº »ç¿ë ¾ÈÇÔ / public static void main-À» ¸»ÇÏ´Â °ÅÀÓ)
+	//ì˜¤ë²„ë¡œë”©ëœ ë©”ì„œë“œ
+	//ì§„ì…ì (=ë©”ì¸ ë©”ì„œë“œ, ë³´í†µì€ ì‚¬ìš© ì•ˆí•¨ / public static void main-ì„ ë§í•˜ëŠ” ê±°ì„)
 	
 }

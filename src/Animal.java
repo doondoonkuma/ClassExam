@@ -1,13 +1,12 @@
-
 public class Animal {
-	//¸â¹öº¯¼ö
+	//ë©¤ë²„ë³€ìˆ˜
 	String name;
 	int weight;
 	int speed;
 	
-	//µğÆúÆ® »ı¼ºÀÚ
+	//ë””í´íŠ¸ ìƒì„±ì
 	public Animal() {
-		name = "µ¿¹°";
+		name = "ë™ë¬¼";
 		weight = 30;
 		speed = 0;
 	}
@@ -24,7 +23,7 @@ public class Animal {
 		speed = 0;
     }         
 	
-	//¸Ş¼­µå
+	//ë©”ì„œë“œ
 	public void setName(String aname) {
 		name = aname;
 	}
@@ -52,11 +51,11 @@ public class Animal {
 	/*----------------------------------------*/
 	
 	public void speedUp() {
-		speed += 10;    //½ºÇÇµå¿¡ 10À» ´©Àû
+		speed += 10;    //ìŠ¤í”¼ë“œì— 10ì„ ëˆ„ì 
 	}
 	
 	public void speedUp(int aspeed) {
-		if (speed + aspeed > 100) {   //ÇöÀç ¼Óµµ¿¡ Ãß°¡µÉ ¼Óµµ¸¦ µ¡¼ÀÇØ¼­ 100ÀÌ ³Ñ´ÂÁö È®ÀÎ
+		if (speed + aspeed > 100) {   //í˜„ì¬ ì†ë„ì— ì¶”ê°€ë  ì†ë„ë¥¼ ë§ì…ˆí•´ì„œ 100ì´ ë„˜ëŠ”ì§€ í™•ì¸
 			speed = 100;
 		} else {
 			speed += aspeed;
@@ -65,11 +64,11 @@ public class Animal {
 	}
 	
 	public void speedDown() {
-		speed -= 10;    //½ºÇÇµå¿¡ 10À» Â÷°¨
+		speed -= 10;    //ìŠ¤í”¼ë“œì— 10ì„ ì°¨ê°
 	}
 	
 	public void speedDown(int aspeed) {
-		if (speed - aspeed < 0) {   //ÇöÀç ¼Óµµ¿¡ Ãß°¡µÉ ¼Óµµ¸¦ µ¡¼ÀÇØ¼­ 100ÀÌ ³Ñ´ÂÁö È®ÀÎ
+		if (speed - aspeed < 0) {   //í˜„ì¬ ì†ë„ì— ì¶”ê°€ë  ì†ë„ë¥¼ ë§ì…ˆí•´ì„œ 100ì´ ë„˜ëŠ”ì§€ í™•ì¸
 			speed = 0;
 		} else {
 			speed -= 10;

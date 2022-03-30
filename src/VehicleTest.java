@@ -1,22 +1,22 @@
 import java.util.*;
-public class VehicleTest { // ±³Àç 276p ÇÏ´Â°Å¾ß!
+public class VehicleTest { // êµì¬ 276p í•˜ëŠ”ê±°ì•¼!
 
 	public static void main(String[] args) {
-		ArrayList<Vehicle> vList = new ArrayList<Vehicle>(); //°¢Á¾ °´Ã¼¸¦ ÀúÀåÇÒ ¹è¿­
+		ArrayList<Vehicle> vList = new ArrayList<Vehicle>(); //ê°ì¢… ê°ì²´ë¥¼ ì €ì¥í•  ë°°ì—´
 		Vehicle v1 = new Sedan("k5");
-		Vehicle v2 = new Suv("»êÅ¸Æä");
-		Vehicle v3 = new Truck("·º½ºÅÏ ½ºÆ÷Ã÷");
-		Vehicle v4 = new Sedan("¾Æ¿ìµğA6");
+		Vehicle v2 = new Suv("ì‚°íƒ€í˜");
+		Vehicle v3 = new Truck("ë ‰ìŠ¤í„´ ìŠ¤í¬ì¸ ");
+		Vehicle v4 = new Sedan("ì•„ìš°ë””A6");
 		Vehicle v5 = new Truck("Zeep");
 		vList.add(v1);
 		vList.add(v2);
 		vList.add(v3);
 		vList.add(v4);
 		vList.add(v5);
-		// ¾Æ·¡¿Í °°ÀÌ »ı¼º ÈÄ Ãß°¡ÇØµµ µÊ
-		// vList.add(new Sedan());  / 6¶óÀÎ ¶Ç´Â 9¶óÀÎ°ú µ¿ÀÏÇÏ´Ù.(»ı¼ºÇÏ¸é¼­ Ãß°¡ÇÑ °ÍÀÌ´Ù.)
-		for (Vehicle v : vList) {   //Çâ»óµÈ for±¸¹®
-			v.move();  // °¢°¢ÀÇ °´Ã¼¿¡ ¸Â°Ô È£ÃâµÊ(´ÙÇü¼º)
+		// ì•„ë˜ì™€ ê°™ì´ ìƒì„± í›„ ì¶”ê°€í•´ë„ ë¨
+		// vList.add(new Sedan());  / 6ë¼ì¸ ë˜ëŠ” 9ë¼ì¸ê³¼ ë™ì¼í•˜ë‹¤.(ìƒì„±í•˜ë©´ì„œ ì¶”ê°€í•œ ê²ƒì´ë‹¤.)
+		for (Vehicle v : vList) {   //í–¥ìƒëœ forêµ¬ë¬¸
+			v.move();  // ê°ê°ì˜ ê°ì²´ì— ë§ê²Œ í˜¸ì¶œë¨(ë‹¤í˜•ì„±)
 		}
 		
 	}

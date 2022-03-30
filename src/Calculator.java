@@ -1,20 +1,20 @@
 
 public class Calculator implements Calc {
-	// Calc ÀÎÅÍÆäÀÌ½ºÀÇ ¸ğµç ¸Ş¼­µå¸¦ ¹İµå½Ã ±¸ÇöÇØ¾ß ÇÔ
-	public int add(int num1, int num2) {  // ºó ²®µ¥±â?¸¦ ¸¸µç´Ù.
+	// Calc ì¸í„°í˜ì´ìŠ¤ì˜ ëª¨ë“  ë©”ì„œë“œë¥¼ ë°˜ë“œì‹œ êµ¬í˜„í•´ì•¼ í•¨
+	public int add(int num1, int num2) {  // ë¹ˆ ê»ë°ê¸°?ë¥¼ ë§Œë“ ë‹¤.
 		
-		return num1 + num2; // Á¤¼ö ¾Æ¹«°Å³ª ¸®ÅÏÇÑ´Ù. ÀÌ°Ô ºó ²®µ¥±â´Ù.
+		return num1 + num2; // ì •ìˆ˜ ì•„ë¬´ê±°ë‚˜ ë¦¬í„´í•œë‹¤. ì´ê²Œ ë¹ˆ ê»ë°ê¸°ë‹¤.
 	}
-	public int substract(int num1, int num2) {  // ºó ²®µ¥±â?¸¦ ¸¸µç´Ù.
+	public int substract(int num1, int num2) {  // ë¹ˆ ê»ë°ê¸°?ë¥¼ ë§Œë“ ë‹¤.
 		
-		return num1 - num2; // Á¤¼ö ¾Æ¹«°Å³ª ¸®ÅÏÇÑ´Ù. ÀÌ°Ô ºó ²®µ¥±â´Ù.
+		return num1 - num2; // ì •ìˆ˜ ì•„ë¬´ê±°ë‚˜ ë¦¬í„´í•œë‹¤. ì´ê²Œ ë¹ˆ ê»ë°ê¸°ë‹¤.
 	}
-	public int times(int num1, int num2) {  // ºó ²®µ¥±â?¸¦ ¸¸µç´Ù.
+	public int times(int num1, int num2) {  // ë¹ˆ ê»ë°ê¸°?ë¥¼ ë§Œë“ ë‹¤.
 	
-		return num1 * num2; // Á¤¼ö ¾Æ¹«°Å³ª ¸®ÅÏÇÑ´Ù. ÀÌ°Ô ºó ²®µ¥±â´Ù.
+		return num1 * num2; // ì •ìˆ˜ ì•„ë¬´ê±°ë‚˜ ë¦¬í„´í•œë‹¤. ì´ê²Œ ë¹ˆ ê»ë°ê¸°ë‹¤.
 	}
-	public int divide(int num1, int num2) {  // ºó ²®µ¥±â?¸¦ ¸¸µç´Ù.
-		if (num2 != 0)  // num2°¡ 0ÀÌ µÇ¸é ¾ÈµÇ´Ï±î!
+	public int divide(int num1, int num2) {  // ë¹ˆ ê»ë°ê¸°?ë¥¼ ë§Œë“ ë‹¤.
+		if (num2 != 0)  // num2ê°€ 0ì´ ë˜ë©´ ì•ˆë˜ë‹ˆê¹Œ!
 			return num1/num2;
 		else
 			return Calc.ERROR;

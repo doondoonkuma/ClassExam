@@ -4,7 +4,7 @@ public class Car {
 	int speed;
 
 	public Car() {    
-		name = "ÀÚµ¿Â÷";
+		name = "ì•„ë°˜ë–¼";
 		speed = 150;
 	}
 	

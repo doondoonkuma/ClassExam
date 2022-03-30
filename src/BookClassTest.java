@@ -1,10 +1,9 @@
-
 public class BookClassTest {
 
 	public static void main(String[] args) {
-		BookClass book = new BookClass(123456, "°³¹Ì");
+		BookClass book = new BookClass(123456, "ê°œë¯¸");
 		System.out.println(book.toString());
-		System.out.println(book); // °´Ã¼¸íÀ» Ãâ·ÂÇÏ¸é toString()¸Ş¼­µå¿Í µ¿ÀÏÇÑ °á°ú
+		System.out.println(book); // ê°ì²´ëª…ì„ ì¶œë ¥í•˜ë©´ toString()ë©”ì„œë“œì™€ ë™ì¼í•œ ê²°ê³¼
 		
 		
 	}

@@ -1,18 +1,17 @@
-
 public class Customer {
-	//»ó¼Ó(±³Àç 234p)
+	//ìƒì†(êµì¬ 234p)
 	protected int customerID;
 	protected String customerName;
 	protected String customerGrade;
 	int bonusPoint;
 	double bonusRatio;
 	
-	//µğÆúÆ® »ı¼ºÀÚ
+	//ë””í´íŠ¸ ìƒì„±ì
 	public Customer() {
 		initCustomer();
 	}
 	
-	//¿À¹ö·ÎµùµÈ »ı¼ºÀÚ
+	//ì˜¤ë²„ë¡œë”©ëœ ìƒì„±ì
 	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
 		this.customerName = customerName;
@@ -33,23 +32,20 @@ public class Customer {
 	}
 	
 	
-	//»ı¼ºÀÚ¿¡¼­ »ç¿ëÇÒ ¸Ş¼­µå
-	private void initCustomer() {  //¿ÜºÎ¿¡¼­ Á¢±Ù ºÒ°¡´ÉÇÏµµ·Ï
+	//ìƒì„±ìì—ì„œ ì‚¬ìš©í•  ë©”ì„œë“œ
+	private void initCustomer() {  //ì™¸ë¶€ì—ì„œ ì ‘ê·¼ ë¶ˆê°€ëŠ¥í•˜ë„ë¡
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
 	
 	}
 	
 	public int calcPrice(int price) {
-		bonusPoint += price * bonusRatio; //º¸³Ê½º Æ÷ÀÎÆ® ¾÷µ¥ÀÌÆ®, °¡°İ ¹İÈ¯
+		bonusPoint += price * bonusRatio; //ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ ì—…ë°ì´íŠ¸, ê°€ê²© ë°˜í™˜
 		return price;
 	}
 	
 	public String showCustomerInfo() {
-		return customerName + " ´ÔÀÇ µî±ŞÀº " + customerGrade + "ÀÌ¸ç, º¸³Ê½º Æ÷ÀÎÆ®´Â" + bonusPoint + "ÀÔ´Ï´Ù.";
+		return customerName + " ë‹˜ì˜ ë“±ê¸‰ì€ " + customerGrade + "ì´ë©°, ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ëŠ”" + bonusPoint + "ì…ë‹ˆë‹¤.";
 	}
-	
 
-	
-	
 }

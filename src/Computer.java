@@ -1,12 +1,11 @@
-
-	// Ãß»ó Å¬·¡½º ±³Àç 281p
-public abstract class Computer {  // Å¬·¡½º ÀÚÃ¼µµ Ãß»ó Å¬·¡½º·Î ¸¸µé¾î Áà¾ß ¿¡·¯°¡ ¾È ³ªÅ¸³­´Ù.
-	public abstract void display();  // Ãß»ó ¸Ş¼­µå
-	public abstract void typing();   // Ãß»ó ¸Ş¼­µå
+	// ì¶”ìƒ í´ë˜ìŠ¤ êµì¬ 281p
+public abstract class Computer {  // í´ë˜ìŠ¤ ìì²´ë„ ì¶”ìƒ í´ë˜ìŠ¤ë¡œ ë§Œë“¤ì–´ ì¤˜ì•¼ ì—ëŸ¬ê°€ ì•ˆ ë‚˜íƒ€ë‚œë‹¤.
+	public abstract void display();  // ì¶”ìƒ ë©”ì„œë“œ
+	public abstract void typing();   // ì¶”ìƒ ë©”ì„œë“œ
 	public void turnOn() {
-		System.out.println("Àü¿øÀ» ÄÒ´Ù.");
+		System.out.println("ì „ì›ì„ ì¼ ë‹¤.");
 	}
 	public void turnOff() {
-		System.out.println("Àü¿øÀ» ²ö´Ù.");
+		System.out.println("ì „ì›ì„ ëˆë‹¤.");
 	}
 }

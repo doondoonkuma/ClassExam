@@ -1,65 +1,64 @@
-
 public class Ex1130_3 {
 
 	public static void main(String[] args) {
-		// È¥ÀÚ ÄÚµùÇØº¸±â
+		// í˜¼ìž ì½”ë”©í•´ë³´ê¸°
 		
-		//ºÏ °´Ã¼ 3°³ »ý¼º ÇÏ°í Ã¥ 3±Ç ÀúÀå ÇÏ±â
-		Book[] bookArr1 = new Book[3];   //Book °´Ã¼¸¦ ÀúÀåÇÒ ¹è¿­º¯¼ö bookArr1À» ¼±¾ð, 1¹ø
+		//ë¶ ê°ì²´ 3ê°œ ìƒì„± í•˜ê³  ì±… 3ê¶Œ ì €ìž¥ í•˜ê¸°
+		Book[] bookArr1 = new Book[3];   //Book ê°ì²´ë¥¼ ì €ìž¥í•  ë°°ì—´ë³€ìˆ˜ bookArr1ì„ ì„ ì–¸, 1ë²ˆ
 		Book[] bookArr2 = new Book[3];
 		
 		
 		for (int i = 0; i < bookArr2.length; i++) {
-			bookArr2[i] = new Book();  //ÀÏ´Ü µðÆúÆ® »ý¼ºÀÚ·Î »ý¼ºÇØµÒ
+			bookArr2[i] = new Book();  //ì¼ë‹¨ ë””í´íŠ¸ ìƒì„±ìžë¡œ ìƒì„±í•´ë‘ 
 		}
 		
-		//Ã¥À» 3±Ç ÀúÀå ÇÏ±â
-		bookArr1[0] = new Book("Å©Áý»ç»¡°£¸À","Å©Áý»ç");    //2¹ø =°°Àº °³³ä
-		bookArr1[1] = new Book("µå¸²ÄÚµù","¿¤¸®");
-		bookArr1[2] = new Book("±âÅ¸¿¬ÁÖ","Fami");
+		//ì±…ì„ 3ê¶Œ ì €ìž¥ í•˜ê¸°
+		bookArr1[0] = new Book("í¬ì§‘ì‚¬ë¹¨ê°„ë§›","í¬ì§‘ì‚¬");    //2ë²ˆ =ê°™ì€ ê°œë…
+		bookArr1[1] = new Book("ë“œë¦¼ì½”ë”©","ì—˜ë¦¬");
+		bookArr1[2] = new Book("ê¸°íƒ€ì—°ì£¼","Fami");
 		
-		//ÀúÀåµÈ Ã¥À» º¹»ç / ¿øº», »çº» Ãâ·Â-
-		System.out.println("======¿øº»======");
-		for (int i = 0; i < bookArr1.length; i++) {  //¿øº»
+		//ì €ìž¥ëœ ì±…ì„ ë³µì‚¬ / ì›ë³¸, ì‚¬ë³¸ ì¶œë ¥-
+		System.out.println("======ì›ë³¸======");
+		for (int i = 0; i < bookArr1.length; i++) {  //ì›ë³¸
 			bookArr1[i].showBookInfo();     
 		}
 		
 		System.arraycopy(bookArr1, 0, bookArr2, 0, 3);
 		for (int i = 0; i < bookArr1.length; i++) {    
-			bookArr2[i].setBookName(bookArr1[i].getBookName()); //±íÀº º¹»ç¸¦ »ç¿ëÇØ¼­ »çº»¿¡ º¹»ç¸¦ ÇÏ´Â °ÍÀÌ ÁÁ´Ù.
+			bookArr2[i].setBookName(bookArr1[i].getBookName()); //ê¹Šì€ ë³µì‚¬ë¥¼ ì‚¬ìš©í•´ì„œ ì‚¬ë³¸ì— ë³µì‚¬ë¥¼ í•˜ëŠ” ê²ƒì´ ì¢‹ë‹¤.
 			bookArr2[i].setAuthor(bookArr1[i].getAuthor());  
 		}
 		
-		//º¹»ç ÈÄ 3¹øÂ° Ã¥À» "ÀÚ¹ÙÇÁ·Î±×·¡¹Ö","¹ÚÀºÁ¾"
-		bookArr1[2] = new Book("ÀÚ¹ÙÇÁ·Î±×·¡¹Ö","¹ÚÀºÁ¾");
+		//ë³µì‚¬ í›„ 3ë²ˆì§¸ ì±…ì„ "ìžë°”í”„ë¡œê·¸ëž˜ë°","ë°•ì€ì¢…"
+		bookArr1[2] = new Book("ìžë°”í”„ë¡œê·¸ëž˜ë°","ë°•ì€ì¢…");
 		
-		System.out.println("======¿øº»======");
+		System.out.println("======ì›ë³¸======");
 		for (int i = 0; i < bookArr1.length; i++) {
 			bookArr1[i].showBookInfo();
 		}
 		
-		System.out.println("======»çº»======");
+		System.out.println("======ì‚¬ë³¸======");
 		for (int i = 0; i < bookArr2.length; i++) {
 			bookArr2[i].showBookInfo();
 		}
 		
-		//¿øº»ÀÇ 2¹øÂ° Ã¥À» ¿øº»¿¡¼­¸¸ º¯°æµÇµµ·Ï "ÀÚ¹Ù","È­ÀÌÆÃ"À¸·Î ¾÷µ¥ÀÌÆ®
-		bookArr1[1].setBookName("ÀÚ¹Ù");
-		bookArr1[1].setAuthor("È­ÀÌÆÃ");
-		System.out.println("======¿øº»======");
+		//ì›ë³¸ì˜ 2ë²ˆì§¸ ì±…ì„ ì›ë³¸ì—ì„œë§Œ ë³€ê²½ë˜ë„ë¡ "ìžë°”","í™”ì´íŒ…"ìœ¼ë¡œ ì—…ë°ì´íŠ¸
+		bookArr1[1].setBookName("ìžë°”");
+		bookArr1[1].setAuthor("í™”ì´íŒ…");
+		System.out.println("======ì›ë³¸======");
 		for (int i = 0; i < bookArr1.length; i++) {
 			bookArr1[i].showBookInfo();
 		}
 		
-		System.out.println("======»çº»======");
-		for (int i = 0; i < bookArr2.length; i++) {   //¿Ö »çº»µµ º¯°æµÆÀ»±î?
+		System.out.println("======ì‚¬ë³¸======");
+		for (int i = 0; i < bookArr2.length; i++) {   //ì™œ ì‚¬ë³¸ë„ ë³€ê²½ëì„ê¹Œ?
 			bookArr2[i].showBookInfo();
 		}
 		
 		System.out.println("===============");
 		
-		//Çâ»óµÈ for¹®°ú ¹è¿­ (±³Àç218p)
-		String[] strArr = {"ÀÚ¹Ù", "¾Èµå·ÎÀÌµå", "C", "ÀÚ¹Ù½ºÅ©¸³Æ®", "ÆÄÀÌ½ã"}; 
+		//í–¥ìƒëœ forë¬¸ê³¼ ë°°ì—´ (êµìž¬218p)
+		String[] strArr = {"ìžë°”", "ì•ˆë“œë¡œì´ë“œ", "C", "ìžë°”ìŠ¤í¬ë¦½íŠ¸", "íŒŒì´ì¬"}; 
 		
 		for ( String lang  : strArr  ) {
 			System.out.print(lang);
@@ -68,8 +67,8 @@ public class Ex1130_3 {
 		for (int i = 0; i < strArr.length; i++) {
 			System.out.print(strArr[i] + " ");
 		}
-		//  (   A    :    B    ) -> A¿¡´Â ¾Õ¿¡¼­ ÃÊ±âÈ­ÇÑ ÇüÅÂ¸¦ À§Ä¡(stringÀº ¹®ÀÚÇü, langÀº Áö¿ªº¯¼öÀÌ°í ÀÌ ¾È¿¡¼­¸¸ »ç¿ëÇÒ ¼ö ÀÖ´Ù. ¹è¿­ÀÇ Å¸ÀÔ) B´Â ¹è¿­À» ¸»ÇÑ´Ù.
-		// ±ÇÀåÇÏ´Â ÄÚµùÀº ¾Æ´Ï´Ù.
+		//  (   A    :    B    ) -> Aì—ëŠ” ì•žì—ì„œ ì´ˆê¸°í™”í•œ í˜•íƒœë¥¼ ìœ„ì¹˜(stringì€ ë¬¸ìží˜•, langì€ ì§€ì—­ë³€ìˆ˜ì´ê³  ì´ ì•ˆì—ì„œë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤. ë°°ì—´ì˜ íƒ€ìž…) BëŠ” ë°°ì—´ì„ ë§í•œë‹¤.
+		// ê¶Œìž¥í•˜ëŠ” ì½”ë”©ì€ ì•„ë‹ˆë‹¤.
 		
 		System.out.println();
 		int[] Numbers = {100, 200, 300, 500, 1000};
@@ -80,22 +79,7 @@ public class Ex1130_3 {
 		for ( int i = 0; i < Numbers.length; i++) {
 			System.out.print(Numbers[i] + " ");
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 
 }

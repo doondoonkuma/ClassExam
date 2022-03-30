@@ -4,6 +4,6 @@ public class Truck extends Vehicle {
 		this.carName = carName;
 	}
 	public void move() {
-		System.out.println(carName + " : ÁüÀ» ½Æ´Â´Ù.");
+		System.out.println(carName + " : ë„ë¡œë¥¼ ë‹¬ë¦°ë‹¤.");
 	}
 }

@@ -1,9 +1,9 @@
 
-public class Sedan extends Vehicle {  //vehicleÀ» »ó¼Ó ¹Ş´Â°Å¾ß!
-	public Sedan(String carName) {  //»ı¼ºÀÚ ¸¸µå´ÂÁß (¹İµå½Ã ¸Å°³º¯¼ö¸¦ Áà¾ß ÇÑ´Ù.)
+public class Sedan extends Vehicle {  //vehicleì„ ìƒì† ë°›ëŠ”ê±°ì•¼!
+	public Sedan(String carName) {  //ìƒì„±ì ë§Œë“œëŠ”ì¤‘ (ë°˜ë“œì‹œ ë§¤ê°œë³€ìˆ˜ë¥¼ ì¤˜ì•¼ í•œë‹¤.)
 		this.carName = carName;
 	}
-	public void move() { //ºÎ¸ğ Å¬·¡½ºÀÇ ¹«ºê¸¦ Àç Á¤ÀÇ ÇÏ´Â°Å¾ß!
-		System.out.println(carName + " : Á¶¿ëÇÏ°Ô ¿òÁ÷ÀÎ´Ù.");		
+	public void move() { //ë¶€ëª¨ í´ë˜ìŠ¤ì˜ ë¬´ë¸Œë¥¼ ì¬ ì •ì˜ í•˜ëŠ”ê±°ì•¼!
+		System.out.println(carName + " : ì¡°ìš©í•˜ê²Œ ì›€ì§ì¸ë‹¤.");		
 	}
 }

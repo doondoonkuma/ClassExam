@@ -1,11 +1,10 @@
-
 public class Subject {
-	//¸â¹öº¯¼ö
+	//ë©¤ë²„ë³€ìˆ˜
 	private String name;
 	private int scorePoint;
 	
-	//»ı¼ºÀÚ »ı·«
-	//¸Ş¼­µå
+	//ìƒì„±ì ìƒëµ
+	//ë©”ì„œë“œ
 	public String getName() {
 		return name;
 	}

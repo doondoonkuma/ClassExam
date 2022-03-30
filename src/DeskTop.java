@@ -1,14 +1,13 @@
-
-public class DeskTop extends Computer {  //ÄÄÇ»ÅÍ Å¬·¡½º¸¦ »ó¼Ó¹ÞÀ» °Å¾ß!
-	// Ãß»óÅ¬·¡½º¸¦ »ó¼Ó¹Þ¾ÒÀ» °æ¿ì ¹Ýµå½Ã Ãß»ó¸Þ¼­µå¸¦ ±¸ÇöÇØ¾ß ÇÑ´Ù.
-	@Override // ÄÄÆÄÀÏ·¯¿¡°Ô ¾Æ·¡¿¡ ÀÖ´Â ³»¿ëÀ» Á» ½Å°æ½áÁà! ¶ó°í ¾Ë·ÁÁÖ´Â ±â´É(±»ÀÌ ¾ø¾îµµ µÇÁö¸¸, ¿ÀÅ¸ ¹× ¿¡·¯¸¦ Ã£¾Æ³»´Âµ¥ ÁÁ´Ù.)
-	public void display() {  // »ó¼Ó ¹Þ´Â ÂÊ¿¡¼­´Â abstract¿¹¾à¾î(Ãß»ó)´Â ¾²Áö ¾Ê´Â´Ù.
+public class DeskTop extends Computer {  //ì»´í“¨í„° í´ëž˜ìŠ¤ë¥¼ ìƒì†ë°›ì„ ê±°ì•¼!
+	// ì¶”ìƒí´ëž˜ìŠ¤ë¥¼ ìƒì†ë°›ì•˜ì„ ê²½ìš° ë°˜ë“œì‹œ ì¶”ìƒë©”ì„œë“œë¥¼ êµ¬í˜„í•´ì•¼ í•œë‹¤.
+	@Override // ì»´íŒŒì¼ëŸ¬ì—ê²Œ ì•„ëž˜ì— ìžˆëŠ” ë‚´ìš©ì„ ì¢€ ì‹ ê²½ì¨ì¤˜! ë¼ê³  ì•Œë ¤ì£¼ëŠ” ê¸°ëŠ¥(êµ³ì´ ì—†ì–´ë„ ë˜ì§€ë§Œ, ì˜¤íƒ€ ë° ì—ëŸ¬ë¥¼ ì°¾ì•„ë‚´ëŠ”ë° ì¢‹ë‹¤.)
+	public void display() {  // ìƒì† ë°›ëŠ” ìª½ì—ì„œëŠ” abstractì˜ˆì•½ì–´(ì¶”ìƒ)ëŠ” ì“°ì§€ ì•ŠëŠ”ë‹¤.
 		System.out.println("DeskTop display");
 	}
-	@Override // ¿©·¯°³ ¾²¸é °¢º°È÷ ½Å°æ¾µ°Ô!ÀÇ ÀÇ¹Ì? Àß¸øµÈ ¹®ÀåÀ» Ã£¾Æ³»´Âµ¥ ±Â!
+	@Override // ì—¬ëŸ¬ê°œ ì“°ë©´ ê°ë³„ížˆ ì‹ ê²½ì“¸ê²Œ!ì˜ ì˜ë¯¸? ìž˜ëª»ëœ ë¬¸ìž¥ì„ ì°¾ì•„ë‚´ëŠ”ë° êµ¿!
 	public void typing() {
 		System.out.println("DeskTop typing");
 	}
 	
 }
-// ÀÏ´ÜÀº ÄÄÇ»ÅÍ¿Í µ¥½ºÅ©Å¾ÀÇ °ü°è¸¸ ÀÌÇØÇÏÀÚ
+// ì¼ë‹¨ì€ ì»´í“¨í„°ì™€ ë°ìŠ¤í¬íƒ‘ì˜ ê´€ê³„ë§Œ ì´í•´í•˜ìž

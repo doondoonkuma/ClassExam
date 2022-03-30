@@ -1,92 +1,96 @@
 import java.util.*;
-class Animals {
-		//´ÙÇü¼º (±³Àç259p)
+
+/*-----------ë¶€ëª¨ í´ë˜ìŠ¤-----------*/
+class Animals {		//ë‹¤í˜•ì„± (êµì¬259p)
 	public void move() {
-		System.out.println("µ¿¹°ÀÌ ¿òÁ÷ÀÔ´Ï´Ù.");
+		System.out.println("ë™ë¬¼ì´ ì›€ì§ì…ë‹ˆë‹¤.");
 	}
 }
 
-class Human extends Animals {  //»ç¶÷Å¬·¡½º »ı¼º ¹× À§¿¡ ¾Ö´Ï¸Ö Å¬·¡½º¸¦ »ó¼Ó ¹Ş´Â´Ù.
-	public void move() {  //¸Ş¼­µå ¿À¹ö¶óÀÌµù(Overriding)
-		System.out.println("»ç¶÷ÀÌ ¿òÁ÷ÀÔ´Ï´Ù.");
+/*-----------ìì‹ í´ë˜ìŠ¤ + ìƒì† -----------*/
+class Human extends Animals {  //ì‚¬ëŒí´ë˜ìŠ¤ ìƒì„± ë° ìœ„ì— ì• ë‹ˆë©€ í´ë˜ìŠ¤ë¥¼ ìƒì† ë°›ëŠ”ë‹¤.
+	public void move() {  //ë©”ì„œë“œ ì˜¤ë²„ë¼ì´ë”©(Overriding)
+		System.out.println("ì‚¬ëŒì´ ì›€ì§ì…ë‹ˆë‹¤.");
 	}
 	public void readBook() {
-		System.out.println("Ã¥À» ÀĞ´Â´Ù.");  //¸®µåºÏ »õ·Î »ı¼º
+		System.out.println("ì±…ì„ ì½ëŠ”ë‹¤.");  //ë¦¬ë“œë¶ ìƒˆë¡œ ìƒì„±
 	}
+	public void movingCar() {
+		System.out.println("k5ê°€ ì§ˆì£¼í•œë‹¤.");
+	}
+	
 }
 
-class Tiger extends Animals {  //È£¶ûÀÌÅ¬·¡½º »ı¼º ¹× À§¿¡ ¾Ö´Ï¸Ö Å¬·¡½º¸¦ »ó¼Ó ¹Ş´Â´Ù.
-	public void move() {  //¸Ş¼­µå ¿À¹ö¶óÀÌµù(Overriding)
-		System.out.println("È£¶ûÀÌ°¡ ¿òÁ÷ÀÔ´Ï´Ù.");
+class Tiger extends Animals {  //í˜¸ë‘ì´í´ë˜ìŠ¤ ìƒì„± ë° ìœ„ì— ì• ë‹ˆë©€ í´ë˜ìŠ¤ë¥¼ ìƒì† ë°›ëŠ”ë‹¤.
+	public void move() {  //ë©”ì„œë“œ ì˜¤ë²„ë¼ì´ë”©(Overriding)
+		System.out.println("í˜¸ë‘ì´ê°€ ì›€ì§ì…ë‹ˆë‹¤.");
 	}
 	public void hunting() {
-		System.out.println("È£¶ûÀÌ°¡ »ç³ÉÀ» ÇÑ´Ù.");
+		System.out.println("í˜¸ë‘ì´ê°€ ì‚¬ëƒ¥ì„ í•œë‹¤.");
 	}
 }
 
-class Eagle extends Animals {  //µ¶¼ö¸®Å¬·¡½º »ı¼º ¹× À§¿¡ ¾Ö´Ï¸Ö Å¬·¡½º¸¦ »ó¼Ó ¹Ş´Â´Ù.
-	public void move() {  //¸Ş¼­µå ¿À¹ö¶óÀÌµù(Overriding)
-		System.out.println("µ¶¼ö¸®°¡ ¿òÁ÷ÀÔ´Ï´Ù.");
+class Eagle extends Animals {  //ë…ìˆ˜ë¦¬í´ë˜ìŠ¤ ìƒì„± ë° ìœ„ì— ì• ë‹ˆë©€ í´ë˜ìŠ¤ë¥¼ ìƒì† ë°›ëŠ”ë‹¤.
+	public void move() {  //ë©”ì„œë“œ ì˜¤ë²„ë¼ì´ë”©(Overriding)
+		System.out.println("ë…ìˆ˜ë¦¬ê°€ ì›€ì§ì…ë‹ˆë‹¤.");
 	}
 	public void flying() {
-		System.out.println("µ¶¼ö¸®°¡ ³¯¾Æ°£´Ù.");
+		System.out.println("ë…ìˆ˜ë¦¬ê°€ ë‚ ì•„ê°„ë‹¤.");
 	}
 }
 
-public class AnimalsTest {  //ÆÄÀÏ¸í°ú µ¿ÀÏÇÑ Å¬·¡½º´Â public ÇÊ¿ä(´Ü, 1°³)
+public class AnimalsTest {  //íŒŒì¼ëª…ê³¼ ë™ì¼í•œ í´ë˜ìŠ¤ëŠ” public í•„ìš”(ë‹¨, 1ê°œ)
 	public static void main(String[] args) {
 		AnimalsTest aTest = new AnimalsTest();
 		
-		Animals[] animalArr = new Animals[10];  //¾Ö´Ï¸ÖÁî °´Ã¼¿¡ ´ëÇØ ¹è¿­À» ¸¸µé¾î º¸°Ú´Ù!, ¹è¿­°´Ã¼ »ı¼º
-		for (int i = 0; i < 3; i++) {  //»ç¶÷ ¼Â
+		Animals[] animalArr = new Animals[10];  //ì• ë‹ˆë©€ì¦ˆ ê°ì²´ì— ëŒ€í•´ ë°°ì—´ì„ ë§Œë“¤ì–´ ë³´ê² ë‹¤!, ë°°ì—´ê°ì²´ ìƒì„±
+		for (int i = 0; i < 3; i++) {  //ì‚¬ëŒ ì…‹
 			animalArr[i] = new Human();
 		}
-		for (int i = 3; i < 5; i++) {  //È£¶û µÑ
+		for (int i = 3; i < 5; i++) {  //í˜¸ë‘ ë‘˜
 			animalArr[i] = new Tiger();
 		}
-		for (int i = 5; i < 10; i++) {   //¼ö¸® ´Ù¼¸
+		for (int i = 5; i < 10; i++) {   //ìˆ˜ë¦¬ ë‹¤ì„¯
 			animalArr[i] = new Eagle();
 		}
 		
-		for (int i = 0; i < 10; i++) {   //¹è¿­ Ãâ·ÂÇØ!
+		for (int i = 0; i < 10; i++) {   //ë°°ì—´ ì¶œë ¥í•´!
 			aTest.moveAnimal(animalArr[i]);
 		} 
 		
 		System.out.println("-------------");
-		//move ¸Ş¼­µå È£Ãâ
+		//move ë©”ì„œë“œ í˜¸ì¶œ
 		for (int i = 0; i < animalArr.length; i++) {
 //			animalArr[i].move();
 		}
 		
 		
-		
-		System.out.println("-------------");
 //		Human a1 = new Human();
 //		Tiger a2 = new Tiger();
-//		Eagle a3 = new Eagle();  -> ÀÌ·¸°Ô ¸¸µé¸é ¸Ş¼­µåµµ ÅëÀÏ¼ºÀÌ ¾ø°í, ¹è¿­À» ¸¸µé ¼öµµ ¾ø¾î¼­(Å¸ÀÔÀÌ ´Ù¸£´Ï±î) ºÒÆíÇÏ´Ù.
-		                           //±×·¡¼­, ¾Æ·¡¿Í °°ÀÌ Å¸ÀÔÀ» °°ÀÌ ¹­¾î³õ°í ¹è¿­µµ ¸¸µé°í ¸Ş¼­µåµµ °øÀ¯ÇÏ¿© ºÒ·¯¿À°í ÇÏ´Â°ÅÁö!
+//		Eagle a3 = new Eagle();  -> ì´ë ‡ê²Œ ë§Œë“¤ë©´ ë©”ì„œë“œë„ í†µì¼ì„±ì´ ì—†ê³ , ë°°ì—´ì„ ë§Œë“¤ ìˆ˜ë„ ì—†ì–´ì„œ(íƒ€ì…ì´ ë‹¤ë¥´ë‹ˆê¹Œ) ë¶ˆí¸í•˜ë‹¤.
+		                           //ê·¸ë˜ì„œ, ì•„ë˜ì™€ ê°™ì´ íƒ€ì…ì„ ê°™ì´ ë¬¶ì–´ë†“ê³  ë°°ì—´ë„ ë§Œë“¤ê³  ë©”ì„œë“œë„ ê³µìœ í•˜ì—¬ ë¶ˆëŸ¬ì˜¤ê³  í•˜ëŠ”ê±°ì§€!
 		
-//		Animals a1 = new Human();   // ÀÌ °´Ã¼ ÀÚÃ¼°¡ ÈŞ¸ÕÀÌ°í
+//		Animals a1 = new Human();   // ì´ ê°ì²´ ìì²´ê°€ íœ´ë¨¼ì´ê³ 
 //		Animals a2 = new Tiger();
-//		Animals a3 = new Eagle();   //-> Å¸ÀÔÀÌ °°¾ÆÁö´Ï±î ¾Ö´Ï¸Ö·Î ÅëÀÏÇÏ¸é ¾ó¸¶³ª ÆíÇØ!!
+//		Animals a3 = new Eagle();   //-> íƒ€ì…ì´ ê°™ì•„ì§€ë‹ˆê¹Œ ì• ë‹ˆë©€ë¡œ í†µì¼í•˜ë©´ ì–¼ë§ˆë‚˜ í¸í•´!!
 //		
 //		aTest.moveAnimal(a1);
 //		aTest.moveAnimal(a2);
 //		aTest.moveAnimal(a3);
 //	}
-	//------------------------(±³Àç 276p)-----------------------------------
+	//------------------------(êµì¬ 276p)-----------------------------------
 	ArrayList<Animals> aniList = new ArrayList<Animals>();
-	aniList.add(new Human());  //°´Ã¼ »ı¼ºÇÏ¸é¼­ ¹è¿­¿¡ Ãß°¡
+	aniList.add(new Human());  //ê°ì²´ ìƒì„±í•˜ë©´ì„œ ë°°ì—´ì— ì¶”ê°€
 	aniList.add(new Tiger());
 	aniList.add(new Eagle());
 	for ( Animals item : aniList ) {
-		item.move();  //´ÙÇü¼º¿¡ ÀÇÇØ °¢°¢ÀÇ ¸Ş¼­µå È£Ãâ
+		item.move();  //ë‹¤í˜•ì„±ì— ì˜í•´ ê°ê°ì˜ ë©”ì„œë“œ í˜¸ì¶œ
 	}
 	for (int i = 0; i < aniList.size(); i++) {
 		Animals item = aniList.get(i);
 		if (item instanceof Human) {
-			Human h = (Human)item; //´Ù¿îÄ³½ºÆÃ
-			h.readBook();  //´Ù¿îÄ³½ºÆÃ µÇ¾úÀ¸¹Ç·Î µ¶¸³µÈ ¸Ş¼­µå »ç¿ë °¡´É
+			Human h = (Human)item; //ë‹¤ìš´ìºìŠ¤íŒ…
+			h.readBook();  //ë‹¤ìš´ìºìŠ¤íŒ… ë˜ì—ˆìœ¼ë¯€ë¡œ ë…ë¦½ëœ ë©”ì„œë“œ ì‚¬ìš© ê°€ëŠ¥
 		} else if (item instanceof Tiger) {
 			Tiger t = (Tiger)item;
 			t.hunting();
@@ -94,7 +98,7 @@ public class AnimalsTest {  //ÆÄÀÏ¸í°ú µ¿ÀÏÇÑ Å¬·¡½º´Â public ÇÊ¿ä(´Ü, 1°³)
 			Eagle e = (Eagle)item;
 			e.flying();
 		} else {
-			System.out.println("¾Ë ¼ö ¾ø´Â ¿À·ùÀÔ´Ï´Ù.");
+			System.out.println("ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜ì…ë‹ˆë‹¤.");
 		}
 	}		
 	
@@ -102,9 +106,8 @@ public class AnimalsTest {  //ÆÄÀÏ¸í°ú µ¿ÀÏÇÑ Å¬·¡½º´Â public ÇÊ¿ä(´Ü, 1°³)
 	//end main
 }	
 	public void moveAnimal(Animals animal) {
-		animal.move();  //´ÙÇü¼º, ½ÇÁ¦·Î ´Ù¸¥ ÀÏÀ» ½ÇÇàÇÑ´Ù. °¢°¢ÀÇ move¸¦ ¶È°°Àº ¸Ş¼­µå·Î È£ÃâÇÏ´Â ¼ÀÀÌ´Ù.
+		animal.move();  //ë‹¤í˜•ì„±, ì‹¤ì œë¡œ ë‹¤ë¥¸ ì¼ì„ ì‹¤í–‰í•œë‹¤. ê°ê°ì˜ moveë¥¼ ë˜‘ê°™ì€ ë©”ì„œë“œë¡œ í˜¸ì¶œí•˜ëŠ” ì…ˆì´ë‹¤.
 	}
 	
 	
 }
-

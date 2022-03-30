@@ -1,5 +1,4 @@
-
-public class BookClass {  // Object Å¬·¡½ºÀÇ ÇÏÀ§Å¬·¡½º
+public class BookClass {  // Object í´ë˜ìŠ¤ì˜ í•˜ìœ„í´ë˜ìŠ¤
 	int bookNumber;
 	String bookTitle;
 	
@@ -8,8 +7,8 @@ public class BookClass {  // Object Å¬·¡½ºÀÇ ÇÏÀ§Å¬·¡½º
 		this.bookTitle = bookTitle;
 	}
 	
-	@Override //¹Ù·Î ¾Æ·¡ ¸Ş¼­µå¿¡ ´ëÇØ¼­ °¢º°È÷ ½Å°æ¾´´Ù. ¿ÀÅ¸°¡ ¹ß»ıÇÏ¸é ¾Ë·ÁÁØ´Ù´øÁö µîµî
-	public String toString() {  // toString()¸Ş¼­µå ÀçÁ¤ÀÇ
+	@Override //ë°”ë¡œ ì•„ë˜ ë©”ì„œë“œì— ëŒ€í•´ì„œ ê°ë³„íˆ ì‹ ê²½ì“´ë‹¤. ì˜¤íƒ€ê°€ ë°œìƒí•˜ë©´ ì•Œë ¤ì¤€ë‹¤ë˜ì§€ ë“±ë“±
+	public String toString() {  // toString()ë©”ì„œë“œ ì¬ì •ì˜
 		return bookTitle + " : " + bookNumber;
 	}
 	

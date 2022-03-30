@@ -2,17 +2,17 @@
 public class StudentsTest {
 
 	public static void main(String[] args) {
-		// ÇĞ»ı, °ú¸ñ Å¬·¡½º Å×½ºÆ®(°¡º¯ °ú¸ñ)
-		Students st1 = new Students(1001, "µĞµĞÀÌ");  //st1ÇĞ»ı¿¡ ´ëÇØ ÇĞ¹ø°ú ÀÌ¸§¸¸ ºÎ¿©
-		st1.addSubject("±¹¾î", 90);
-		st1.addSubject("¿µ¾î", 85);
-		Students st2 = new Students(1002, "·ç¶ûÀÌ");
-		st2.addSubject("±¹¾î", 70);
-		st2.addSubject("¿µ¾î", 93);
-		st2.addSubject("¼öÇĞ", 81);
+		// í•™ìƒ, ê³¼ëª© í´ë˜ìŠ¤ í…ŒìŠ¤íŠ¸(ê°€ë³€ ê³¼ëª©)
+		Students st1 = new Students(1001, "ë‘”ë‘”ì´");  //st1í•™ìƒì— ëŒ€í•´ í•™ë²ˆê³¼ ì´ë¦„ë§Œ ë¶€ì—¬
+		st1.addSubject("êµ­ì–´", 90);
+		st1.addSubject("ì˜ì–´", 85);
+		Students st2 = new Students(1002, "ë£¨ë‘ì´");
+		st2.addSubject("êµ­ì–´", 70);
+		st2.addSubject("ì˜ì–´", 93);
+		st2.addSubject("ìˆ˜í•™", 81);
 		
 		st1.showStudentInfo();
-		st2.showStudentInfo();    //ÇĞ»ı1°ú ÇĞ»ı2ÀÇ °ú¸ñÀÌ µ¿ÀÏÇÏÁö ¾Ê¾Æµµ ¹è¿­ÇÏ°í ArrayList¸¦ ÀÌ¿ëÇØ Ãâ·ÂÇß´Ù! Á¤¸» ¾î·Æ´Ù..
+		st2.showStudentInfo();    //í•™ìƒ1ê³¼ í•™ìƒ2ì˜ ê³¼ëª©ì´ ë™ì¼í•˜ì§€ ì•Šì•„ë„ ë°°ì—´í•˜ê³  ArrayListë¥¼ ì´ìš©í•´ ì¶œë ¥í–ˆë‹¤! ì •ë§ ì–´ë µë‹¤..
 		
 	}
 

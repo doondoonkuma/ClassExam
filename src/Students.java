@@ -1,52 +1,40 @@
-import java.util.*;    //util ¾Æ·¡ÀÇ ¸ğµç °æ·Î¿¡ ´ëÇØ¼­~ -ÀÇ ÀÇ¹Ì
-public class Students {    //Áö±İ±îÁö ¹è¿î °ÍµéÀ» È°¿ëÇÒ ¼ö ÀÖ´Â ¿¬½À (±³Àç ~230p±îÁö)
-	//¸â¹öº¯¼ö
+import java.util.*;    //util ì•„ë˜ì˜ ëª¨ë“  ê²½ë¡œì— ëŒ€í•´ì„œ~ -ì˜ ì˜ë¯¸
+public class Students {    //ì§€ê¸ˆê¹Œì§€ ë°°ìš´ ê²ƒë“¤ì„ í™œìš©í•  ìˆ˜ ìˆëŠ” ì—°ìŠµ (êµì¬ ~230pê¹Œì§€)
+	//ë©¤ë²„ë³€ìˆ˜
 	private int studentID;
 	private String studentName;
 	//int kor;
-	//int eng;  // ÇĞ»ı¸¶´Ù °ú¸ñÀ» ¸î°³¾¿ ¼ö°­ Çß´ÂÁö ¸ğ¸£´Ï±î °¡º¯ÇÒ ¼ö ÀÖµµ·Ï ArrayList¸¦ È°¿ëÇÏÀÚ!
-	ArrayList<Subject> subjectList;  //->¿¡·¯°¡ ³­ ÀÌÀ¯...´Â ¸ğ¸£°ÚÁö¸¸ import¿Í °æ·Î¸¦ Àû¿ëÇÏ¸é ÇØ°á µÈ´Ù.
+	//int eng;  // í•™ìƒë§ˆë‹¤ ê³¼ëª©ì„ ëª‡ê°œì”© ìˆ˜ê°• í–ˆëŠ”ì§€ ëª¨ë¥´ë‹ˆê¹Œ ê°€ë³€í•  ìˆ˜ ìˆë„ë¡ ArrayListë¥¼ í™œìš©í•˜ì!
+	ArrayList<Subject> subjectList;  //->ì—ëŸ¬ê°€ ë‚œ ì´ìœ ...ëŠ” ëª¨ë¥´ê² ì§€ë§Œ importì™€ ê²½ë¡œë¥¼ ì ìš©í•˜ë©´ í•´ê²° ëœë‹¤.
 
-	//»ı¼ºÀÚ
+	//ìƒì„±ì
 	public Students() {
 		
 	}
-	//¿À¹ö·ÎµùµÈ »ı¼ºÀÚ
+	//ì˜¤ë²„ë¡œë”©ëœ ìƒì„±ì
 	public Students(int studentID, String studentName) {
 		this.studentID = studentID;
 		this.studentName = studentName;
-		subjectList = new ArrayList<Subject>();  //Subject Å¬·¡½º°¡ ÇÊ¿äÇÏ´Ù. ¸¸µé·¯ °¡ÀÚ~ ÇØ°áÇß´Ù!
+		subjectList = new ArrayList<Subject>();  //Subject í´ë˜ìŠ¤ê°€ í•„ìš”í•˜ë‹¤. ë§Œë“¤ëŸ¬ ê°€ì~ í•´ê²°í–ˆë‹¤!
 	}
 	
-	//°ú¸ñ¸í°ú Á¡¼ö¸¦ Ãß°¡ÇÏ´Â ¸Ş¼­µå, ÇĞ»ı¸¶´Ù °¢°¢ Ã³¸®
+	//ê³¼ëª©ëª…ê³¼ ì ìˆ˜ë¥¼ ì¶”ê°€í•˜ëŠ” ë©”ì„œë“œ, í•™ìƒë§ˆë‹¤ ê°ê° ì²˜ë¦¬
 	public void addSubject(String name, int score) {
 		Subject subject = new Subject();
 		subject.setName(name);
 		subject.setScorePoint(score);
-		subjectList.add(subject); //ÀÌÁ¦ºÎÅÍ Áß¿ä, ¸®½ºÆ®¿¡ Ãß°¡ÇØ¾ß ÇÑ´Ù. SubjectÅ¸ÀÔÀÇ °´Ã¼¸¦ Ãß°¡
+		subjectList.add(subject); //ì´ì œë¶€í„° ì¤‘ìš”, ë¦¬ìŠ¤íŠ¸ì— ì¶”ê°€í•´ì•¼ í•œë‹¤. Subjectíƒ€ì…ì˜ ê°ì²´ë¥¼ ì¶”ê°€
 	}
 	public void showStudentInfo() {
-		int total = 0;  //ÃÑÁ¡ °è»ê¿ë Áö¿ªº¯¼ö
+		int total = 0;  //ì´ì  ê³„ì‚°ìš© ì§€ì—­ë³€ìˆ˜
 		System.out.print(studentName + ":" + studentID);       
-		for ( Subject s : subjectList ) {  //ÀúÀåµÈ ¿ø¼Ò ¼ö¸¸Å­ ¹İº¹
-			total += s.getScorePoint();    //ÃÑÁ¡ ´©Àû
+		for ( Subject s : subjectList ) {  //ì €ì¥ëœ ì›ì†Œ ìˆ˜ë§Œí¼ ë°˜ë³µ
+			total += s.getScorePoint();    //ì´ì  ëˆ„ì 
 			System.out.print(s.getName() + ":" + s.getScorePoint());
 		}
 		System.out.println();
-		System.out.println("ÃÑÁ¡ : " + total);
+		System.out.println("ì´ì  : " + total);
 		System.out.println("=========================");
 	}
-	
-	
-	
-	
-	
-	
-	
-
-
-
-
-
 
 }

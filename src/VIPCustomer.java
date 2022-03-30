@@ -1,27 +1,26 @@
-
-public class VIPCustomer extends Customer { //(±³Àç 236p)ÀÌ Å¬·¡½º´Â ¹æ±İ ¸¸µç Å¬·¡½º¿¡¼­ »ó¼Ó ¹ŞÀ» ¼ö ÀÖ´Ù.(Áö±İÀº ÇÁ¶óÀÌºøÀÌ °É·ÁÀÖ´Ù.)
+public class VIPCustomer extends Customer { //(êµì¬ 236p)ì´ í´ë˜ìŠ¤ëŠ” ë°©ê¸ˆ ë§Œë“  í´ë˜ìŠ¤ì—ì„œ ìƒì† ë°›ì„ ìˆ˜ ìˆë‹¤.(ì§€ê¸ˆì€ í”„ë¼ì´ë¹—ì´ ê±¸ë ¤ìˆë‹¤.)
 	
 	private int agentID;
 	double saleRatio;
 
 	public VIPCustomer(int customerID, String customerName, int agentID) {
-		super(customerID, customerName);  //ºÎ¸ğÅ¬·¡½ºÀÇ »ı¼ºÀÚ È£Ãâ(µğÆúÆ® »ı¼ºÀÚ´Â ÀÚµ¿ È£Ãâ µÇÁö¸¸ ±×·¸Áö ¾ÊÀº °æ¿ì ¸¸µé¾î Áà¾ß ÇÑ´Ù.)
-		                                  //¸í½ÃÀûÀ¸·Î »ı¼ºÀÚ µÎ °³ È£Ãâ ÇÏ¸é µğÆúÆ® »ı¼ºÀÚ´Â ÀÚµ¿ È£Ãâ ºÒ°¡´É..(ÀÌ°Ç Çò°¥¸°´Ù.)
+		super(customerID, customerName);  //ë¶€ëª¨í´ë˜ìŠ¤ì˜ ìƒì„±ì í˜¸ì¶œ(ë””í´íŠ¸ ìƒì„±ìëŠ” ìë™ í˜¸ì¶œ ë˜ì§€ë§Œ ê·¸ë ‡ì§€ ì•Šì€ ê²½ìš° ë§Œë“¤ì–´ ì¤˜ì•¼ í•œë‹¤.)
+		                                  //ëª…ì‹œì ìœ¼ë¡œ ìƒì„±ì ë‘ ê°œ í˜¸ì¶œ í•˜ë©´ ë””í´íŠ¸ ìƒì„±ìëŠ” ìë™ í˜¸ì¶œ ë¶ˆê°€ëŠ¥..(ì´ê±´ í—·ê°ˆë¦°ë‹¤.)
 		customerGrade = "VIP";
-		bonusRatio = 0.05;    //º¸³Ê½º
-		saleRatio = 0.1;      //ÇÒÀÎÀ²
+		bonusRatio = 0.05;    //ë³´ë„ˆìŠ¤
+		saleRatio = 0.1;      //í• ì¸ìœ¨
 		this.agentID = agentID;
 	}
-	//¸Ş¼­µå ¿À¹ö¶óÀÌµù
+	//ë©”ì„œë“œ ì˜¤ë²„ë¼ì´ë”©
 	public int calcPrice(int price) {
-		bonusPoint += price * bonusRatio; //º¸³Ê½º Æ÷ÀÎÆ® ¾÷µ¥ÀÌÆ®, °¡°İ ¹İÈ¯
+		bonusPoint += price * bonusRatio; //ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ ì—…ë°ì´íŠ¸, ê°€ê²© ë°˜í™˜
 		return price - (int)(price * saleRatio);
 	}
 	
-	//¸Ş¼­µå ¿À¹ö¶óÀÌµù
+	//ë©”ì„œë“œ ì˜¤ë²„ë¼ì´ë”©
 	public String showCustomerInfo() {
-//		return customerName + " ´ÔÀÇ µî±ŞÀº " + customerGrade + "ÀÌ¸ç, º¸³Ê½º Æ÷ÀÎÆ®´Â" + bonusPoint + "ÀÔ´Ï´Ù.";
-		return super.showCustomerInfo() + ":" + agentID;  //ºÎ¸ğÂÊ°Å ¹İÈ¯¹Ş¾Æ¿À±â ´Ü, ´©±¸°ÇÁö ¸ğ¸§
+//		return customerName + " ë‹˜ì˜ ë“±ê¸‰ì€ " + customerGrade + "ì´ë©°, ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ëŠ”" + bonusPoint + "ì…ë‹ˆë‹¤.";
+		return super.showCustomerInfo() + ":" + agentID;  //ë¶€ëª¨ìª½ê±° ë°˜í™˜ë°›ì•„ì˜¤ê¸° ë‹¨, ëˆ„êµ¬ê±´ì§€ ëª¨ë¦„
 		
 	}
 	

@@ -1,31 +1,20 @@
-
 public class Score_1 {
 
 	public static void main(String[] args) {
-		// Score Å¬·¡½º Å×½ºÆ®
+		// Score í´ë˜ìŠ¤ í…ŒìŠ¤íŠ¸
 
 		Score st1 = new Score();
-		System.out.println(st1.getName() + "ÀÇ ±¹¾îÁ¡¼ö´Â" + st1.getKor() + "ÀÌ°í, ¿µ¾îÁ¡¼ö´Â " + st1.getEng() + "ÀÌ°í, ¼öÇĞÁ¡¼ö´Â " + st1.getMat() + "ÀÌ°í, ÃÑÁ¡Àº " + st1.getTotal() + "ÀÌ°í, Æò±ÕÀº " + st1.getAvg() + "ÀÌ´Ù.");
+		System.out.println(st1.getName() + "ì˜ êµ­ì–´ì ìˆ˜ëŠ”" + st1.getKor() + "ì´ê³ , ì˜ì–´ì ìˆ˜ëŠ” " + st1.getEng() + "ì´ê³ , ìˆ˜í•™ì ìˆ˜ëŠ” " + st1.getMat() + "ì´ê³ , ì´ì ì€ " + st1.getTotal() + "ì´ê³ , í‰ê· ì€ " + st1.getAvg() + "ì´ë‹¤.");
 		
-		st1.setName("±è»ñ°«");
+		st1.setName("ê¹€ì‚¿ê°“");
 		st1.setKor(93);
 		st1.setEng(78);
 		st1.setMat(81);
-		System.out.println(st1.getName() + "ÀÇ ±¹¾îÁ¡¼ö´Â" + st1.getKor() + "ÀÌ°í, ¿µ¾îÁ¡¼ö´Â " + st1.getEng() + "ÀÌ°í, ¼öÇĞÁ¡¼ö´Â " + st1.getMat() + "ÀÌ°í, ÃÑÁ¡Àº " + st1.getTotal() + "ÀÌ°í, Æò±ÕÀº " + st1.getAvg() + "ÀÌ´Ù.");
+		System.out.println(st1.getName() + "ì˜ êµ­ì–´ì ìˆ˜ëŠ”" + st1.getKor() + "ì´ê³ , ì˜ì–´ì ìˆ˜ëŠ” " + st1.getEng() + "ì´ê³ , ìˆ˜í•™ì ìˆ˜ëŠ” " + st1.getMat() + "ì´ê³ , ì´ì ì€ " + st1.getTotal() + "ì´ê³ , í‰ê· ì€ " + st1.getAvg() + "ì´ë‹¤.");
 		
-		Score st2 = new Score("ÀÌµµ·É", 84, 91, 79);
-		System.out.println(st2.getName() + "ÀÇ ±¹¾îÁ¡¼ö´Â" + st2.getKor() + "ÀÌ°í, ¿µ¾îÁ¡¼ö´Â " + st2.getEng() + "ÀÌ°í, ¼öÇĞÁ¡¼ö´Â " + st2.getMat() + "ÀÌ°í, ÃÑÁ¡Àº " + st2.getTotal() + "ÀÌ°í, Æò±ÕÀº " + st2.getAvg() + "ÀÌ´Ù.");
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		Score st2 = new Score("ì´ë„ë ¹", 84, 91, 79);
+		System.out.println(st2.getName() + "ì˜ êµ­ì–´ì ìˆ˜ëŠ”" + st2.getKor() + "ì´ê³ , ì˜ì–´ì ìˆ˜ëŠ” " + st2.getEng() + "ì´ê³ , ìˆ˜í•™ì ìˆ˜ëŠ” " + st2.getMat() + "ì´ê³ , ì´ì ì€ " + st2.getTotal() + "ì´ê³ , í‰ê· ì€ " + st2.getAvg() + "ì´ë‹¤.");
+	
 	}
 
 }

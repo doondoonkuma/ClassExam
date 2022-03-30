@@ -1,9 +1,8 @@
-
-public class Suv extends Vehicle {  //vehicleÀ» »ó¼Ó ¹Ş´Â°Å¾ß!
+public class Suv extends Vehicle {  //vehicleì„ ìƒì† ë°›ëŠ”ê±°ì•¼!
 	public Suv (String carName) {
 		this.carName = carName;
 	}
-	public void move() { //ºÎ¸ğ Å¬·¡½ºÀÇ ¹«ºê¸¦ Àç Á¤ÀÇ ÇÏ´Â°Å¾ß!
-		System.out.println(carName + " : »ê±æÀ» °£´Ù.");
+	public void move() { //ë¶€ëª¨ í´ë˜ìŠ¤ì˜ ë¬´ë¸Œë¥¼ ì¬ ì •ì˜ í•˜ëŠ”ê±°ì•¼!
+		System.out.println(carName + " : ì‚°ê¸¸ì„ ê°„ë‹¤.");
 	}
 }

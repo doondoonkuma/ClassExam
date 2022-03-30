@@ -1,18 +1,17 @@
-
 public class Score {
-	//¸â¹öº¯¼ö
+	//ë©¤ë²„ë³€ìˆ˜
 	String name;
 	int kor;
 	int eng;
 	int mat;
 	
-	//µğÆúÆ® »ı¼ºÀÚ
+	//ë””í´íŠ¸ ìƒì„±ì
 //	public Score() {
 //		
 //	}
 	
 	public Score() {
-		name = "È«±æµ¿";
+		name = "í™ê¸¸ë™";
 		kor = 70;
 		eng = 70;
 		mat = 70;
@@ -26,7 +25,7 @@ public class Score {
 	}
 		
 	
-	//¸Ş¼­µå
+	//ë©”ì„œë“œ
 	public void setName(String sname) {
 		name = sname;
 	}
@@ -64,12 +63,12 @@ public class Score {
 	
 	
 	
-	public int getTotal() {         //ÃÑÁ¡
+	public int getTotal() {         //ì´ì 
 		return kor + eng + mat;
 	}
-	public double getAvg() {        //Æò±Õ
-		return getTotal() / 3.0;    //ÀÌ ¹æ¹ıÀÌ ÁÁ´Ù. °Ù ÅäÅ»°ú 3Àº Á¤¼öÀÎµ¥ ´õºíÇü(½Ç¼öÇü)À» ½è±â ¶§¹®¿¡ 3À» 3.0À¸·Î ¹Ù²ã¼­ ³ª´©´Â°Ô ÁÁ´Ù.
-	}                               // ¶Ç´Â return (double)getTotal() / 3;À¸·Î ÇØµµ µÈ´Ù.
+	public double getAvg() {        //í‰ê· 
+		return getTotal() / 3.0;    //ì´ ë°©ë²•ì´ ì¢‹ë‹¤. ê²Ÿ í† íƒˆê³¼ 3ì€ ì •ìˆ˜ì¸ë° ë”ë¸”í˜•(ì‹¤ìˆ˜í˜•)ì„ ì¼ê¸° ë•Œë¬¸ì— 3ì„ 3.0ìœ¼ë¡œ ë°”ê¿”ì„œ ë‚˜ëˆ„ëŠ”ê²Œ ì¢‹ë‹¤.
+	}                               // ë˜ëŠ” return (double)getTotal() / 3;ìœ¼ë¡œ í•´ë„ ëœë‹¤.
 
 	
 	

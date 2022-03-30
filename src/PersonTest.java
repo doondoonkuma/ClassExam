@@ -1,21 +1,20 @@
-
 public class PersonTest {
 
 	public static void main(String[] args) {
-		// Person Å¬·¡½º Å×½ºÆ® / »ı¼ºÀÚ(±³Àç154p)
-		// ¿À¹ö·ÎµùµÈ »ı¼ºÀÚ°¡ ÀÖÀ» °æ¿ì µğÆúÆ® »ı¼ºÀÚµµ ±¸ÇöÇØ¾ß ÇÑ´Ù.(³»¿ë ¾ø¾îµµ µÊ)
-		Person hu1 = new Person();   //µğÆúÆ® »ı¼ºÀÚ
-		Person hu2 = new Person("µĞµĞÀÌ");     //¸Å°³º¯¼ö1°³ »ı¼ºÀÚ
+		// Person í´ë˜ìŠ¤ í…ŒìŠ¤íŠ¸ / ìƒì„±ì(êµì¬154p)
+		// ì˜¤ë²„ë¡œë”©ëœ ìƒì„±ìê°€ ìˆì„ ê²½ìš° ë””í´íŠ¸ ìƒì„±ìë„ êµ¬í˜„í•´ì•¼ í•œë‹¤.(ë‚´ìš© ì—†ì–´ë„ ë¨)
+		Person hu1 = new Person();   //ë””í´íŠ¸ ìƒì„±ì
+		Person hu2 = new Person("ë‘”ë‘”ì´");     //ë§¤ê°œë³€ìˆ˜1ê°œ ìƒì„±ì
 		System.out.println(hu2.getName());
 
 		
-		// Ãß°¡µÈ ¸Ş¼­µå ±â´É Å×½ºÆ®
-		/* ³»°¡ ÇÑ°Å
-		Person hu3 = new Person("¹ÚÁ¾¼ö");
+		// ì¶”ê°€ëœ ë©”ì„œë“œ ê¸°ëŠ¥ í…ŒìŠ¤íŠ¸
+		/* ë‚´ê°€ í•œê±°
+		Person hu3 = new Person("ë°•ì¢…ìˆ˜");
 		Person hu4 = new Person("185");
 		Person hu5 = new Person("74");
 		
-		Person hu6 = new Person("¹ÚÁ¾¼ö",185,74);
+		Person hu6 = new Person("ë°•ì¢…ìˆ˜",185,74);
 		
 		System.out.println(hu3.getName());
 		System.out.println(hu4.getName());
@@ -23,15 +22,15 @@ public class PersonTest {
 		
 		System.out.println(hu6.get());    */
 		
-		//¼±»ı´ÔÀÇ Á¤´ä
-		Person hu3 = new Person();  //¼¼ °³ ³Ö°í ÇÑ ¹ø¿¡ Ãâ·Â
-		System.out.println("¼º¸í : " + hu3.getName() + ", Å° : " + hu3.getHeight() + ", ¸ö¹«°Ô : " + hu3.getWeight());
+		//ì„ ìƒë‹˜ì˜ ì •ë‹µ
+		Person hu3 = new Person();  //ì„¸ ê°œ ë„£ê³  í•œ ë²ˆì— ì¶œë ¥
+		System.out.println("ì„±ëª… : " + hu3.getName() + ", í‚¤ : " + hu3.getHeight() + ", ëª¸ë¬´ê²Œ : " + hu3.getWeight());
 		
-		hu3.setPerson("¹ÚÁ¾¼ö", 180, 80);              //ÀÎÀû»çÇ× º¯ÇüÇÏ¿© Ãâ·ÂÇÒ ÁÙ ¾Æ´Â°¡? -¸¦ ¾Ë¾Æº¸´Â ±âÃâº¯Çü¹®Á¦
-		System.out.println("¼º¸í : " + hu3.getName() + ", Å° : " + hu3.getHeight() + ", ¸ö¹«°Ô : " + hu3.getWeight());
+		hu3.setPerson("ë°•ì¢…ìˆ˜", 185, 75);              //ì¸ì ì‚¬í•­ ë³€í˜•í•˜ì—¬ ì¶œë ¥í•  ì¤„ ì•„ëŠ”ê°€? -ë¥¼ ì•Œì•„ë³´ëŠ” ê¸°ì¶œë³€í˜•ë¬¸ì œ
+		System.out.println("ì„±ëª… : " + hu3.getName() + ", í‚¤ : " + hu3.getHeight() + ", ëª¸ë¬´ê²Œ : " + hu3.getWeight());
 	
-		hu1.setPerson("¾çÁ¤¿ì", 180, 80);              //°´Ã¼ ¼öÁ¤ÇÒ ÁÙ ¾Æ´Â°¡?-¸¦ ¾Ë¾Æº¸´Â ¹®Á¦
-		System.out.println("¼º¸í : " + hu3.getName() + ", Å° : " + hu3.getHeight() + ", ¸ö¹«°Ô : " + hu3.getWeight());
+		hu3.setPerson("ì–‘ì •ìš°", 176, 85);              //ê°ì²´ ìˆ˜ì •í•  ì¤„ ì•„ëŠ”ê°€?-ë¥¼ ì•Œì•„ë³´ëŠ” ë¬¸ì œ
+		System.out.println("ì„±ëª… : " + hu3.getName() + ", í‚¤ : " + hu3.getHeight() + ", ëª¸ë¬´ê²Œ : " + hu3.getWeight());
 	
 	
 	}

@@ -3,13 +3,13 @@ public class StudentArray {
 
 	public static void main(String[] args) {
 		
-		//¼±»ı´ÔÀÌ ¸¸µç°Å
-//		Student st1 = new Student("È«±æµ¿");
+		//ì„ ìƒë‹˜ì´ ë§Œë“ ê±°
+//		Student st1 = new Student("í™ê¸¸ë™");
 //		System.out.println(st1.getStudentName() + ":" + st1.getStudentId());
 		
 		
 		
-		//³»°¡ ¸¸µç°Å
+		//ë‚´ê°€ ë§Œë“ ê±°
 //		Student st1 = new Student("James");
 //		st1.add(new Student(1001, "James"));
 //		st1.add(new Student(1002, "Tomas"));
